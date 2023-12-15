@@ -1,0 +1,11 @@
+{
+  "package_name": "mage_msgs",
+  "non_idl_tuples": [
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs:msg/AdvancedLogicalCameraImage.msg",
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs:msg/Part.msg",
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs:msg/PartPose.msg",
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs:msg/Sensors.msg",
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs:msg/Marker.msg",
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs:msg/MarkerArray.msg"
+  ]
+}

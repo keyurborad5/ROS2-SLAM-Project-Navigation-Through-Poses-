@@ -1,0 +1,170 @@
+[  0%] Built target ament_cmake_python_copy_final_project
+[100%] Built target disable_shadows_plugin
+[100%] Built target AriacLogicalCameraPlugin
+running install_scripts
+running egg_info
+writing final_project.egg-info/PKG-INFO
+writing dependency_links to final_project.egg-info/dependency_links.txt
+writing top-level names to final_project.egg-info/top_level.txt
+running egg_info
+writing final_project.egg-info/PKG-INFO
+writing dependency_links to final_project.egg-info/dependency_links.txt
+writing top-level names to final_project.egg-info/top_level.txt
+reading manifest file 'final_project.egg-info/SOURCES.txt'
+writing manifest file 'final_project.egg-info/SOURCES.txt'
+reading manifest file 'final_project.egg-info/SOURCES.txt'
+writing manifest file 'final_project.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_final_project_egg
+[100%] Built target ament_cmake_python_build_final_project_scripts
+-- Install configuration: ""
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/library_path.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/library_path.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/ariac_logical_camera_plugin.hpp
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/disable_shadows_plugin.hpp
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libAriacLogicalCameraPlugin.so
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libdisable_shadows_plugin.so
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config/sensors.yaml
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/spawn_turtlebot3.launch.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/robot_state_publisher.launch.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/final_project.launch.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_pins.stl
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_base.stl
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_cap.stl
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_collision.stl
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model-1_4.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_01_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_06_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/box_pallet.dae
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_05_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/scripts
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/scripts/marker.material
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/svgtopng.zip
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/5x5_1000-2.svg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/5x5_1000-2.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/marker_2.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_03_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_01_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_08_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/box_pallet.dae
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_04_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/Suede_Blue_1.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/Suede_Blue.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/example-2.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/floor.dae
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_02_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_07_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_01_Diffuse.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/box_pallet.dae
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/scripts
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/scripts/marker.material
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/5x5_1000-1.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/svgtopng.zip
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/5x5_1000-1.svg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/marker_1.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/scripts
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/scripts/marker.material
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/5x5_1000-0.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/svgtopng.zip
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/marker_0_old.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/5x5_1000-0.svg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials/textures
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials/textures/camera.png
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/meshes/camera.dae
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/model.sdf
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/model.config
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_exterior.dae
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/Metal_Rough.jpg.001.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_exterior.stl
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_interior.stl
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/Steel_Brushed_Stainless.jpg.001.jpg
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//worlds
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//worlds/final.world
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps/final2_map.yaml
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps/final2_map.pgm
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/pythonpath.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/pythonpath.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/SOURCES.txt
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/top_level.txt
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/PKG-INFO
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/dependency_links.txt
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/spawn_params.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf_broadcaster.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/utilities.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/__init__.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/environment_startup.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf2_geometry_msgs.py
+Listing '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project'...
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/environment_startup_node.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/sensor_tf_broadcaster.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/part_spawner.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/object_tf_broadcaster.py
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/package_run_dependencies/final_project
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/parent_prefix_path/final_project
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/ament_prefix_path.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/path.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/path.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.bash
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.zsh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/package.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/packages/final_project
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/final_projectConfig.cmake
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/final_projectConfig-version.cmake
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/package.xml

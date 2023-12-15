@@ -1,0 +1,4 @@
+source;share/group17_final/local_setup.bash
+source;share/group17_final/local_setup.dsv
+source;share/group17_final/local_setup.sh
+source;share/group17_final/local_setup.zsh

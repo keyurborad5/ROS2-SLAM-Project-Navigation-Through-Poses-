@@ -1,0 +1,43 @@
+[3.545s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/prefix_override:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build install --record /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[3.788s] running egg_info
+[3.788s] creating ../../../build/ros2_aruco/ros2_aruco.egg-info
+[3.788s] writing ../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[3.789s] writing dependency_links to ../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[3.789s] writing entry points to ../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[3.789s] writing requirements to ../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[3.789s] writing top-level names to ../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[4.094s] writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[4.163s] reading manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[4.163s] writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[4.164s] running build
+[4.164s] running build_py
+[4.164s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build
+[4.164s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib
+[4.164s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco
+[4.164s] copying ros2_aruco/transformations.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco
+[4.164s] copying ros2_aruco/aruco_generate_marker.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco
+[4.165s] copying ros2_aruco/aruco_node.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco
+[4.165s] copying ros2_aruco/__init__.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco
+[4.165s] running install
+[4.165s] running install_lib
+[4.166s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco
+[4.166s] copying /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco/transformations.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco
+[4.167s] copying /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco/aruco_generate_marker.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco
+[4.167s] copying /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco/aruco_node.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco
+[4.167s] copying /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build/lib/ros2_aruco/__init__.py -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco
+[4.167s] byte-compiling /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco/transformations.py to transformations.cpython-38.pyc
+[4.177s] byte-compiling /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco/aruco_generate_marker.py to aruco_generate_marker.cpython-38.pyc
+[4.178s] byte-compiling /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco/aruco_node.py to aruco_node.cpython-38.pyc
+[4.179s] byte-compiling /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco/__init__.py to __init__.cpython-38.pyc
+[4.179s] running install_data
+[4.179s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ament_index
+[4.179s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ament_index/resource_index
+[4.180s] creating /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ament_index/resource_index/packages
+[4.180s] copying resource/ros2_aruco -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ament_index/resource_index/packages
+[4.180s] copying package.xml -> /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco
+[4.180s] running install_egg_info
+[4.181s] Copying ../../../build/ros2_aruco/ros2_aruco.egg-info to /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages/ros2_aruco-0.1.0-py3.8.egg-info
+[4.182s] running install_scripts
+[4.200s] Installing aruco_node script to /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/ros2_aruco
+[4.200s] writing list of installed files to '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/install.log'
+[4.224s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/prefix_override:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build install --record /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed

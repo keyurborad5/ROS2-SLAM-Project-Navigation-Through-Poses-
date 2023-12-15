@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/galactic/include/**",
+                "/usr/include/**",
+                "/opt/ros/galactic/include/rclcpp",
+                "/opt/ros/galactic/include",
+                "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/**",
+                "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node",
+                "${workspaceFolder}/src/group17_final/include/group17_final/**",
+                "${workspaceFolder}/install/ros2_aruco_interfaces/include",
+                "${workspaceFolder}/install/mage_msgs/include",
+                "${workspaceFolder}/src/group17_final/include/group17_final"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,189 @@
+[35m[1mScanning dependencies of target disable_shadows_plugin[0m
+[35m[1mScanning dependencies of target AriacLogicalCameraPlugin[0m
+[35m[1mScanning dependencies of target ament_cmake_python_copy_final_project[0m
+[  0%] Built target ament_cmake_python_copy_final_project
+[35m[1mScanning dependencies of target ament_cmake_python_build_final_project_scripts[0m
+[35m[1mScanning dependencies of target ament_cmake_python_build_final_project_egg[0m
+running install_scripts
+running egg_info
+creating final_project.egg-info
+writing final_project.egg-info/PKG-INFO
+writing dependency_links to final_project.egg-info/dependency_links.txt
+writing top-level names to final_project.egg-info/top_level.txt
+writing manifest file 'final_project.egg-info/SOURCES.txt'
+running egg_info
+writing final_project.egg-info/PKG-INFO
+writing dependency_links to final_project.egg-info/dependency_links.txt
+writing top-level names to final_project.egg-info/top_level.txt
+reading manifest file 'final_project.egg-info/SOURCES.txt'
+writing manifest file 'final_project.egg-info/SOURCES.txt'
+reading manifest file 'final_project.egg-info/SOURCES.txt'
+writing manifest file 'final_project.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_final_project_egg
+[  0%] Built target ament_cmake_python_build_final_project_scripts
+[ 25%] [32mBuilding CXX object CMakeFiles/disable_shadows_plugin.dir/src/disable_shadows_plugin.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/AriacLogicalCameraPlugin.dir/src/ariac_logical_camera_plugin.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libdisable_shadows_plugin.so[0m
+[ 75%] Built target disable_shadows_plugin
+[100%] [32m[1mLinking CXX shared library libAriacLogicalCameraPlugin.so[0m
+[100%] Built target AriacLogicalCameraPlugin
+-- Install configuration: ""
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/library_path.sh
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/library_path.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/ariac_logical_camera_plugin.hpp
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/disable_shadows_plugin.hpp
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libAriacLogicalCameraPlugin.so
+-- Set runtime path of "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libAriacLogicalCameraPlugin.so" to ""
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libdisable_shadows_plugin.so
+-- Set runtime path of "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libdisable_shadows_plugin.so" to ""
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config/sensors.yaml
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/spawn_turtlebot3.launch.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/robot_state_publisher.launch.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/final_project.launch.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_pins.stl
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_base.stl
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_cap.stl
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_collision.stl
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model-1_4.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_01_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_06_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/box_pallet.dae
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_05_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/scripts
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/scripts/marker.material
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/svgtopng.zip
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/5x5_1000-2.svg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/5x5_1000-2.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/marker_2.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_03_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_01_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_08_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/box_pallet.dae
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_04_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/Suede_Blue_1.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/Suede_Blue.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/example-2.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/floor.dae
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_02_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_07_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_01_Diffuse.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/box_pallet.dae
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/scripts
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/scripts/marker.material
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/5x5_1000-1.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/svgtopng.zip
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/5x5_1000-1.svg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/marker_1.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/scripts
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/scripts/marker.material
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/5x5_1000-0.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/svgtopng.zip
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/marker_0_old.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/5x5_1000-0.svg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials/textures
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials/textures/camera.png
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/meshes/camera.dae
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/model.sdf
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/model.config
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_exterior.dae
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/Metal_Rough.jpg.001.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_exterior.stl
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_interior.stl
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/Steel_Brushed_Stainless.jpg.001.jpg
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//worlds
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//worlds/final.world
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps/final2_map.yaml
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps/final2_map.pgm
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/pythonpath.sh
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/pythonpath.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/SOURCES.txt
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/top_level.txt
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/PKG-INFO
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/dependency_links.txt
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/spawn_params.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf_broadcaster.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/utilities.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/__init__.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/environment_startup.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf2_geometry_msgs.py
+Listing '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project'...
+Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/__init__.py'...
+Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/environment_startup.py'...
+Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/spawn_params.py'...
+Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf2_geometry_msgs.py'...
+Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf_broadcaster.py'...
+Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/utilities.py'...
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/environment_startup_node.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/sensor_tf_broadcaster.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/part_spawner.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/object_tf_broadcaster.py
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/package_run_dependencies/final_project
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/parent_prefix_path/final_project
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/ament_prefix_path.sh
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/ament_prefix_path.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/path.sh
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/path.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.bash
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.sh
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.zsh
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/package.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/packages/final_project
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/final_projectConfig.cmake
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/final_projectConfig-version.cmake
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/package.xml

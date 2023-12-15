@@ -1,0 +1,381 @@
+[3.161s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.162s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb835f66c10>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb835f66c10>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb835f66cd0>)
+[3.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.475s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws'
+[3.475s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.488s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extensions ['ignore', 'ignore_ament_install']
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extension 'ignore'
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extension 'ignore_ament_install'
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extensions ['colcon_pkg']
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extension 'colcon_pkg'
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extensions ['colcon_meta']
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extension 'colcon_meta'
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extensions ['ros']
+[3.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/final_project) by extension 'ros'
+[3.494s] DEBUG:colcon.colcon_core.package_identification:Package 'src/final_project' with type 'ros.ament_cmake' and name 'final_project'
+[3.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extensions ['ignore', 'ignore_ament_install']
+[3.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extension 'ignore'
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extension 'ignore_ament_install'
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extensions ['colcon_pkg']
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extension 'colcon_pkg'
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extensions ['colcon_meta']
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extension 'colcon_meta'
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extensions ['ros']
+[3.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/group17_final) by extension 'ros'
+[3.496s] DEBUG:colcon.colcon_core.package_identification:Package 'src/group17_final' with type 'ros.ament_cmake' and name 'group17_final'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'ignore'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'ignore_ament_install'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['colcon_pkg']
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'colcon_pkg'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['colcon_meta']
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'colcon_meta'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extensions ['ros']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/mage_msgs) by extension 'ros'
+[3.497s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mage_msgs' with type 'ros.ament_cmake' and name 'mage_msgs'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore_ament_install'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_pkg']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_pkg'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_meta']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_meta'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ros']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ros'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['cmake', 'python']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'cmake'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['python_setup_py']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python_setup_py'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore_ament_install'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_pkg']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_pkg'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_meta']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_meta'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ros']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ros'
+[3.499s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco' with type 'ros.ament_python' and name 'ros2_aruco'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore_ament_install'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_pkg']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_pkg'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_meta']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_meta'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ros']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ros'
+[3.500s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco_interfaces' with type 'ros.ament_cmake' and name 'ros2_aruco_interfaces'
+[3.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.905s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.905s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.110s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install
+[4.156s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install
+[4.199s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/keyur/ros809_ws/install
+[4.242s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 329 installed packages in /opt/ros/galactic
+[4.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.524s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'mage_msgs' is in: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs
+	'ros2_aruco_interfaces' is in: /home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding mage_msgs ros2_aruco_interfaces
+
+This may be promoted to an error in a future release of colcon-override-check.
+[5.575s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_args' from command line to 'None'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_target' from command line to 'None'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[5.576s] Level 5:colcon.colcon_core.verb:set package 'mage_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.576s] DEBUG:colcon.colcon_core.verb:Building package 'mage_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs', 'symlink_install': False, 'test_result_base': None}
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_args' from command line to 'None'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target' from command line to 'None'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[5.621s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.621s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco', 'symlink_install': False, 'test_result_base': None}
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[5.666s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.666s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco_interfaces', 'symlink_install': False, 'test_result_base': None}
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_args' from command line to 'None'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_target' from command line to 'None'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_clean_cache' from command line to 'False'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_clean_first' from command line to 'False'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'cmake_force_configure' from command line to 'False'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'ament_cmake_args' from command line to 'None'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'catkin_cmake_args' from command line to 'None'
+[5.711s] Level 5:colcon.colcon_core.verb:set package 'final_project' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.711s] DEBUG:colcon.colcon_core.verb:Building package 'final_project' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/final_project', 'symlink_install': False, 'test_result_base': None}
+[5.754s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'cmake_args' from command line to 'None'
+[5.754s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'cmake_target' from command line to 'None'
+[5.754s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.754s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'cmake_clean_cache' from command line to 'False'
+[5.754s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'cmake_clean_first' from command line to 'False'
+[5.755s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'cmake_force_configure' from command line to 'False'
+[5.755s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'ament_cmake_args' from command line to 'None'
+[5.755s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'catkin_cmake_args' from command line to 'None'
+[5.755s] Level 5:colcon.colcon_core.verb:set package 'group17_final' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.755s] DEBUG:colcon.colcon_core.verb:Building package 'group17_final' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final', 'merge_install': False, 'path': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final', 'symlink_install': False, 'test_result_base': None}
+[5.798s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.842s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.842s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs' with build type 'ament_cmake'
+[5.843s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs'
+[5.926s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.926s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.926s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.180s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco' with build type 'ament_python'
+[6.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'ament_prefix_path')
+[6.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.ps1'
+[6.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.dsv'
+[6.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.sh'
+[6.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.522s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco_interfaces' with build type 'ament_cmake'
+[6.522s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco_interfaces'
+[6.571s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.571s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs
+[7.180s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco'
+[7.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces
+[9.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/prefix_override:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build install --record /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[10.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/prefix_override:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/build install --record /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[10.742s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco' for CMake module files
+[10.744s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco' for CMake config files
+[10.747s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib'
+[10.748s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/bin'
+[10.748s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/pkgconfig/ros2_aruco.pc'
+[10.750s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages'
+[10.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'pythonpath')
+[10.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.ps1'
+[10.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.dsv'
+[10.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.sh'
+[10.824s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/bin'
+[10.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco)
+[10.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/package.ps1'
+[10.872s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/package.dsv'
+[10.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/package.sh'
+[10.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/package.bash'
+[10.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/ros2_aruco/package.zsh'
+[10.952s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/share/colcon-core/packages/ros2_aruco)
+[19.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces
+[19.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces -- -j8 -l8
+[19.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/mage_msgs -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs
+[19.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs -- -j8 -l8
+[26.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces -- -j8 -l8
+[26.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces
+[27.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[27.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/ros2_aruco_interfaces
+[27.093s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces' for CMake module files
+[27.094s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces' for CMake config files
+[27.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[27.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[27.162s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[27.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[27.162s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib'
+[27.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[27.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[27.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[27.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[27.210s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/bin'
+[27.211s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[27.211s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages'
+[27.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'pythonpath')
+[27.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.ps1'
+[27.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.dsv'
+[27.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.sh'
+[27.258s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/bin'
+[27.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[27.305s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[27.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[27.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[27.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[27.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[27.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs -- -j8 -l8
+[27.415s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[27.462s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces' for CMake module files
+[27.463s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces' for CMake config files
+[27.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[27.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[27.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[27.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[27.511s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib'
+[27.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[27.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[27.558s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[27.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[27.558s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/bin'
+[27.559s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[27.559s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages'
+[27.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'pythonpath')
+[27.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.ps1'
+[27.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.dsv'
+[27.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.sh'
+[27.606s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/bin'
+[27.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[27.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[27.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[27.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[27.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[27.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[27.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs
+[27.747s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mage_msgs)
+[27.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/mage_msgs
+[27.796s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs' for CMake module files
+[27.797s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs' for CMake config files
+[27.797s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'cmake_prefix_path')
+[27.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.ps1'
+[27.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.dsv'
+[27.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.sh'
+[27.844s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib'
+[27.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'ld_library_path_lib')
+[27.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.ps1'
+[27.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.dsv'
+[27.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.sh'
+[27.892s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/bin'
+[27.892s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/pkgconfig/mage_msgs.pc'
+[27.892s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages'
+[27.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'pythonpath')
+[27.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.ps1'
+[27.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.dsv'
+[27.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.sh'
+[27.939s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/bin'
+[27.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.ps1'
+[27.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.dsv'
+[27.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.sh'
+[27.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.bash'
+[27.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.zsh'
+[27.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/colcon-core/packages/mage_msgs)
+[28.186s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mage_msgs)
+[28.233s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs' for CMake module files
+[28.233s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs' for CMake config files
+[28.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'cmake_prefix_path')
+[28.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.ps1'
+[28.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.dsv'
+[28.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/cmake_prefix_path.sh'
+[28.281s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib'
+[28.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'ld_library_path_lib')
+[28.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.ps1'
+[28.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.dsv'
+[28.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/ld_library_path_lib.sh'
+[28.328s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/bin'
+[28.328s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/pkgconfig/mage_msgs.pc'
+[28.328s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages'
+[28.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('mage_msgs', 'pythonpath')
+[28.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.ps1'
+[28.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.dsv'
+[28.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/hook/pythonpath.sh'
+[28.374s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/bin'
+[28.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.ps1'
+[28.421s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.dsv'
+[28.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.sh'
+[28.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.bash'
+[28.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/package.zsh'
+[28.423s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/colcon-core/packages/mage_msgs)
+[28.423s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/final_project' with build type 'ament_cmake'
+[28.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/final_project'
+[28.472s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[28.472s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[28.705s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final' with build type 'ament_cmake'
+[28.705s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final'
+[28.768s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[28.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[29.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/final_project -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project
+[29.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final
+[32.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final' returned '1': AMENT_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final -DCMAKE_INSTALL_PREFIX=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final
+[32.498s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(group17_final)
+[32.549s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final' for CMake module files
+[32.549s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final' for CMake config files
+[32.549s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/bin'
+[32.550s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/lib/pkgconfig/group17_final.pc'
+[32.550s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/lib/python3.8/site-packages'
+[32.550s] Level 1:colcon.colcon_core.environment:checking '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/bin'
+[32.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.ps1'
+[32.597s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.dsv'
+[32.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.sh'
+[32.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.bash'
+[32.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.zsh'
+[32.598s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/colcon-core/packages/group17_final)
+[42.009s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.009s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.009s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[42.009s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[42.096s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[42.096s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[42.097s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[42.121s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[42.175s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/local_setup.ps1'
+[42.183s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/_local_setup_util_ps1.py'
+[42.192s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/setup.ps1'
+[42.245s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/local_setup.sh'
+[42.256s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/_local_setup_util_sh.py'
+[42.257s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/setup.sh'
+[42.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/local_setup.bash'
+[42.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/setup.bash'
+[42.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/local_setup.zsh'
+[42.365s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/setup.zsh'
