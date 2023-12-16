@@ -21,6 +21,27 @@ void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::S
     part_color_= msg->part_poses[0].part.color;
     //part_type_= msg->part_poses[0].part.type;
 
+    switch(part_color_){
+        case mage_msgs::msg::Part::BLUE:
+        RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART BLUE COLOR: ");
+        break;
+        case mage_msgs::msg::Part::RED:
+        RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART RED COLOR: ");
+        break;
+        case mage_msgs::msg::Part::GREEN:
+        RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART GREEN COLOR: ");
+        break;
+        case mage_msgs::msg::Part::PURPLE:
+        RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART PURPLE COLOR: ");
+        break;
+        case mage_msgs::msg::Part::ORANGE:
+        RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART ORANGE COLOR: ");
+        break;
+        RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED NO COLOR: ");
+        default:
+        break;
+    }
+
     part_dynamic_transform_stamped.transform.translation.x = msg->part_poses[0].pose.position.x;
     part_dynamic_transform_stamped.transform.translation.y = msg->part_poses[0].pose.position.y;
     part_dynamic_transform_stamped.transform.translation.z = -msg->part_poses[0].pose.position.z;//had to make it neg because it was detecting object below the floor
@@ -29,6 +50,7 @@ void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::S
     part_dynamic_transform_stamped.transform.rotation.y = msg->part_poses[0].pose.orientation.y;
     part_dynamic_transform_stamped.transform.rotation.z = msg->part_poses[0].pose.orientation.z;
     part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses[0].pose.orientation.w;
+   
     // Send the transform
     part_tf_broadcaster_->sendTransform(part_dynamic_transform_stamped);
     
@@ -64,20 +86,17 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
     //     pose_out.orientation.w);
     // //Utlising Utlis to convert quaternion to rpy
     // std::array<double, 3> euler = utils_ptr_->set_euler_from_quaternion(q);
-    // //initialising local variable as vector of data of detected object
-    // std::vector<double> detection={part_color_,pose_out.position.x,pose_out.position.y,pose_out.position.z,euler[0],euler[1],euler[2]};
-    // //passing the above vector to logg all the detected parts
-    // detected_part_locations(detection);
+    //initialising local variable as vector of data of detected object
+     std::vector<std::variant<int,double> >detection={part_color_,pose_out.position.x,
+                                                pose_out.position.y,
+                                                pose_out.position.z,
+                                                pose_out.orientation.x,
+                                                pose_out.orientation.y,
+                                                pose_out.orientation.z,
+                                                pose_out.orientation.w};
+    //passing the above vector to logg all the detected parts
+    parts_vector_.push_back(detection);
     
-
-    // RCLCPP_INFO_STREAM(this->get_logger(), target_frame << " in " << source_frame << ":\n"
-    //                                                     << "x: " << pose_out.position.x << "\t"
-    //                                                     << "y: " << pose_out.position.y << "\t"
-    //                                                     << "z: " << pose_out.position.z << "\n"
-    //                                                     << "qx: " << pose_out.orientation.x << "\t"
-    //                                                     << "qy: " << pose_out.orientation.y << "\t"
-    //                                                     << "qz: " << pose_out.orientation.z << "\t"
-    //                                                     << "qw: " << pose_out.orientation.w << "\n");
 }
 
 //Aruco camera callback method
@@ -95,7 +114,7 @@ void MyRobotNode::aruco_cam_sub_cb(ros2_aruco_interfaces::msg::ArucoMarkers::Sha
 
 }
 
-//Part's Advanced logical camera callback method
+//Part's Advanced logical camera 1 callback method
 void MyRobotNode::part_cam_sub_cb1(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
@@ -118,7 +137,7 @@ void MyRobotNode::part_cam_sub_cb1(mage_msgs::msg::AdvancedLogicalCameraImage::S
     }
 
 }
-//Part's Advanced logical camera callback method
+//Part's Advanced logical camera 2 callback method
 void MyRobotNode::part_cam_sub_cb2(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
@@ -142,7 +161,7 @@ void MyRobotNode::part_cam_sub_cb2(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
 }
 
-//Part's Advanced logical camera callback method
+//Part's Advanced logical camera 3 callback method
 void MyRobotNode::part_cam_sub_cb3(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
@@ -165,7 +184,7 @@ void MyRobotNode::part_cam_sub_cb3(mage_msgs::msg::AdvancedLogicalCameraImage::S
     }
 
 }
-
+//Part's Advanced logical camera 4 callback method
 void MyRobotNode::part_cam_sub_cb4(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
@@ -188,7 +207,7 @@ void MyRobotNode::part_cam_sub_cb4(mage_msgs::msg::AdvancedLogicalCameraImage::S
     }
 
 }
-
+//Part's Advanced logical camera 5 callback method
 void MyRobotNode::part_cam_sub_cb5(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not

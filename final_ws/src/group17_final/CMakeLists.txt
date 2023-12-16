@@ -57,7 +57,7 @@ DESTINATION lib/${PROJECT_NAME}
 )
 
 
-install(DIRECTORY include DESTINATION share/${PROJECT_NAME}/
+install(DIRECTORY include config DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()

@@ -1,4 +1,4 @@
-your_node_name:
+my_robot_node:
   ros__parameters:
     aruco_0:
       wp1:

@@ -1,0 +1,56 @@
+[35m[1mScanning dependencies of target my_robot_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:[m[K In constructor ‘[01m[KMyRobotNode::MyRobotNode(std::string)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:21:58:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+   21 | "[01;35m[K)[m[K;
+      |  [01;35m[K^[m[K
+
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:7[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+  422 |  [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+      |  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:22:58:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+   22 | "[01;35m[K)[m[K;
+      |  [01;35m[K^[m[K
+
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:7[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+  422 |  [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+      |  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+
+[100%] [32m[1mLinking CXX executable my_robot_node[0m
+[100%] Built target my_robot_node
+-- Install configuration: ""
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/lib/group17_final/my_robot_node
+-- Set runtime path of "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/lib/group17_final/my_robot_node" to ""
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//include
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//include/group17_final
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//include/group17_final/my_robot_node.hpp
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/ament_index/resource_index/package_run_dependencies/group17_final
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/ament_index/resource_index/parent_prefix_path/group17_final
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/ament_prefix_path.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/path.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/path.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.bash
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.sh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.zsh
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.dsv
+-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.dsv
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/ament_index/resource_index/packages/group17_final
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/cmake/group17_finalConfig.cmake
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/cmake/group17_finalConfig-version.cmake
+-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.xml

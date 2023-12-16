@@ -16,6 +16,20 @@ class MyRobotNode : public rclcpp::Node{
     public:
      MyRobotNode(std::string node_name) : Node(node_name){
 
+        std::vector<std::string>wp{"wp1","wp2","wp3","wp4","wp5"};
+        for (auto &n:wp){
+            this->declare_parameter("aruco_0."+ n+".color","white");
+            this->declare_parameter("aruco_1."+ n+".color","black");
+            std::string aruco_0_color = this->get_parameter("aruco_0."+n+".color").as_string();
+            aruco_0_waypoints_.push_back(aruco_0_color);
+            std::string aruco_1_color = this->get_parameter("aruco_1."+n+".color").as_string();
+            aruco_1_waypoints_.push_back(aruco_1_color);
+        }
+
+        for(auto &i:aruco_0_waypoints_){
+            RCLCPP_INFO_STREAM(this->get_logger(),i);
+        }
+
         //************************Broadcaster******************************
         // initialize the transform broadcaster
         part_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
@@ -34,15 +48,10 @@ class MyRobotNode : public rclcpp::Node{
 
         //********************Subscriber**************************
         
-        aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
+        // aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
         
         rclcpp::QoS qos(10); qos.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
-        // for(int i=0;i<3;i++){
-        //     camera_frame_=advanced_camera_frames_.at(i);
-        //     RCLCPP_INFO_STREAM(this->get_logger(),"INside of : "<<camera_frame_.c_str()); 
-        //     part_cam_subscriber_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>(advanced_camera_topics_.at(i).c_str(),rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb,this,std::placeholders::_1));
         
-        // }
 
         part_cam_subscriber1_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera1/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb1,this,std::placeholders::_1));
         part_cam_subscriber2_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera2/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb2,this,std::placeholders::_1));
@@ -126,6 +135,8 @@ class MyRobotNode : public rclcpp::Node{
     int marker_id_;
     bool found_marker_id_=false;
     int part_color_;
+    std::vector<std::string> aruco_0_waypoints_;
+    std::vector<std::string> aruco_1_waypoints_;
     std::vector<std::string> advanced_camera_topics_{"mage/camera1/image","mage/camera2/image","mage/camera3/image","mage/camera4/image","mage/camera5/image"};
     std::vector<std::string> advanced_camera_frames_{"camera1_frame","camera2_frame","camera3_frame","camera4_frame","camera5_frame"};
     std::string camera_frame_;
