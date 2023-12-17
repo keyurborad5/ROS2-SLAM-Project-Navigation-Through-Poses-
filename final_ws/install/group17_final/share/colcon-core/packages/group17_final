@@ -1,1 +1,1 @@
-geometry_msgs:mage_msgs:nav_msgs:rclcpp:ros2_aruco_interfaces:std_msgs:tf2:tf2_geometry_msgs:tf2_ros
+example_interfaces:geometry_msgs:mage_msgs:nav2_msgs:nav_msgs:rclcpp:rclcpp_action:rclcpp_components:ros2_aruco_interfaces:std_msgs:tf2:tf2_geometry_msgs:tf2_ros

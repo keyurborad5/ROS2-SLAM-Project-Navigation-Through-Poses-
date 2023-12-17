@@ -1,1 +1,1 @@
-rclcpp;mage_msgs;geometry_msgs;std_msgs;tf2_ros;nav_msgs;tf2;tf2_geometry_msgs;ros2_aruco_interfaces;ament_lint_auto;ament_lint_common
+rclcpp;rclcpp_action;rclcpp_components;mage_msgs;geometry_msgs;std_msgs;tf2_ros;nav_msgs;nav2_msgs;tf2;tf2_geometry_msgs;example_interfaces;ros2_aruco_interfaces;ament_lint_auto;ament_lint_common

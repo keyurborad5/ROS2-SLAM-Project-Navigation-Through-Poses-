@@ -1,0 +1,52 @@
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseWithCovarianceStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KPoseWithCovariance[m[K’?
+  112 | ometry_msgs::msg::[01;31m[KPoseWithCovarianceStamped[m[K>::SharedPtr initial_pose_pub_;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                   [32m[KPoseWithCovariance[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  112 | hCovarianceStamped[01;31m[K>[m[K::SharedPtr initial_pose_pub_;
+      |                   [01;31m[K^[m[K
+
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  112 | varianceStamped>::[01;31m[KSharedPtr[m[K initial_pose_pub_;
+      |                   [01;31m[K^~~~~~~~~[m[K
+      |                            [32m[K;[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_pose_pub_[m[K’ does not name a type
+  112 | amped>::SharedPtr [01;31m[Kinitial_pose_pub_[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:[m[K In constructor ‘[01m[KMyRobotNode::MyRobotNode(std::string)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_pose_pub_[m[K’ was not declared in this scope
+   52 |         [01;31m[Kinitial_pose_pub_[m[K = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("initialpose", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:72:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseWithCovarianceStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KPoseWithCovariance[m[K’?
+   52 | ometry_msgs::msg::[01;31m[KPoseWithCovarianceStamped[m[K>("initialpose", 10);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                   [32m[KPoseWithCovariance[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:116:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMyRobotNode::create_publisher<<expression error> >(const char [12], int)[m[K’
+   52 | ("initialpose", 10[01;31m[K)[m[K;
+      |                   [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:7[m[K,
+                 from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  200 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   52 | ("initialpose", 10[01;31m[K)[m[K;
+      |                   [01;31m[K^[m[K
+
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:[m[K In member function ‘[01m[Kvoid MyRobotNode::set_initial_pose(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:137:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_pose_pub_[m[K’ was not declared in this scope
+  137 |   [01;31m[Kinitial_pose_pub_[m[K->publish(message);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/my_robot_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

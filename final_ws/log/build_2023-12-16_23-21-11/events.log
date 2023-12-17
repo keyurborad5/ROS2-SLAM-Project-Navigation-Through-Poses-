@@ -1,0 +1,193 @@
+[0.000000] (-) TimerEvent: {}
+[0.000143] (-) JobUnselected: {'identifier': 'final_project'}
+[0.000761] (-) JobUnselected: {'identifier': 'mage_msgs'}
+[0.000802] (-) JobUnselected: {'identifier': 'ros2_aruco'}
+[0.000906] (-) JobUnselected: {'identifier': 'ros2_aruco_interfaces'}
+[0.000941] (group17_final) JobQueued: {'identifier': 'group17_final', 'dependencies': OrderedDict([('mage_msgs', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs'), ('ros2_aruco_interfaces', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces')])}
+[0.000977] (group17_final) JobStarted: {'identifier': 'group17_final'}
+[0.099639] (-) TimerEvent: {}
+[0.200412] (-) TimerEvent: {}
+[0.300849] (-) TimerEvent: {}
+[0.403063] (-) TimerEvent: {}
+[0.503855] (-) TimerEvent: {}
+[0.604204] (-) TimerEvent: {}
+[0.704597] (-) TimerEvent: {}
+[0.805049] (-) TimerEvent: {}
+[0.905400] (-) TimerEvent: {}
+[0.918830] (group17_final) JobProgress: {'identifier': 'group17_final', 'progress': 'cmake'}
+[1.005533] (-) TimerEvent: {}
+[1.057986] (group17_final) JobProgress: {'identifier': 'group17_final', 'progress': 'build'}
+[1.059258] (group17_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final', '--', '-j8', '-l8'], 'cwd': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'keyur'), ('SSH_AGENT_PID', '1481'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/keyur'), ('OLDPWD', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1138'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3256'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install:/home/keyur/ros809_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'keyur'), ('JOURNAL_STREAM', '8:40292'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'keyur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/keyur:@/tmp/.ICE-unix/1519,unix/keyur:/tmp/.ICE-unix/1519'), ('INVOCATION_ID', 'd9eb67e937e54864bf8c5b72eb5a8517'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:55ef37c3-581c-41a6-9afc-ed23924ccc35'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic')]), 'shell': False}
+[1.106463] (-) TimerEvent: {}
+[1.208545] (-) TimerEvent: {}
+[1.309229] (-) TimerEvent: {}
+[1.409575] (-) TimerEvent: {}
+[1.509973] (-) TimerEvent: {}
+[1.610279] (-) TimerEvent: {}
+[1.710618] (-) TimerEvent: {}
+[1.810958] (-) TimerEvent: {}
+[1.911261] (-) TimerEvent: {}
+[2.011562] (-) TimerEvent: {}
+[2.111959] (-) TimerEvent: {}
+[2.212367] (-) TimerEvent: {}
+[2.216677] (group17_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target my_robot_node\x1b[0m\n'}
+[2.312512] (-) TimerEvent: {}
+[2.401940] (group17_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o\x1b[0m\n'}
+[2.412622] (-) TimerEvent: {}
+[2.512960] (-) TimerEvent: {}
+[2.613270] (-) TimerEvent: {}
+[2.713574] (-) TimerEvent: {}
+[2.813950] (-) TimerEvent: {}
+[2.914344] (-) TimerEvent: {}
+[3.014706] (-) TimerEvent: {}
+[3.115096] (-) TimerEvent: {}
+[3.215467] (-) TimerEvent: {}
+[3.315968] (-) TimerEvent: {}
+[3.416319] (-) TimerEvent: {}
+[3.516686] (-) TimerEvent: {}
+[3.617102] (-) TimerEvent: {}
+[3.717695] (-) TimerEvent: {}
+[3.818050] (-) TimerEvent: {}
+[3.918402] (-) TimerEvent: {}
+[4.018698] (-) TimerEvent: {}
+[4.119013] (-) TimerEvent: {}
+[4.219427] (-) TimerEvent: {}
+[4.319748] (-) TimerEvent: {}
+[4.420113] (-) TimerEvent: {}
+[4.520569] (-) TimerEvent: {}
+[4.620919] (-) TimerEvent: {}
+[4.721323] (-) TimerEvent: {}
+[4.821687] (-) TimerEvent: {}
+[4.922003] (-) TimerEvent: {}
+[5.022331] (-) TimerEvent: {}
+[5.122774] (-) TimerEvent: {}
+[5.223202] (-) TimerEvent: {}
+[5.323606] (-) TimerEvent: {}
+[5.423997] (-) TimerEvent: {}
+[5.524447] (-) TimerEvent: {}
+[5.624884] (-) TimerEvent: {}
+[5.725400] (-) TimerEvent: {}
+[5.826187] (-) TimerEvent: {}
+[5.926920] (-) TimerEvent: {}
+[6.027264] (-) TimerEvent: {}
+[6.127638] (-) TimerEvent: {}
+[6.227989] (-) TimerEvent: {}
+[6.328322] (-) TimerEvent: {}
+[6.428676] (-) TimerEvent: {}
+[6.487147] (group17_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.487444] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KPoseWithCovariance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.487572] (group17_final) StderrLine: {'line': b'  112 | ometry_msgs::msg::\x1b[01;31m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K>::SharedPtr initial_pose_pub_;\n'}
+[6.487669] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.487762] (group17_final) StderrLine: {'line': b'      |                   \x1b[32m\x1b[KPoseWithCovariance\x1b[m\x1b[K\n'}
+[6.487852] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.487948] (group17_final) StderrLine: {'line': b'  112 | hCovarianceStamped\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr initial_pose_pub_;\n'}
+[6.488040] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.488130] (group17_final) StderrLine: {'line': b'\n'}
+[6.488219] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.488313] (group17_final) StderrLine: {'line': b'  112 | varianceStamped>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K initial_pose_pub_;\n'}
+[6.488404] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.488494] (group17_final) StderrLine: {'line': b'      |                            \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.493612] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:112:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitial_pose_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.493919] (group17_final) StderrLine: {'line': b'  112 | amped>::SharedPtr \x1b[01;31m\x1b[Kinitial_pose_pub_\x1b[m\x1b[K;\n'}
+[6.494128] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.494281] (group17_final) StderrLine: {'line': b'\n'}
+[6.528804] (-) TimerEvent: {}
+[6.629218] (-) TimerEvent: {}
+[6.729623] (-) TimerEvent: {}
+[6.732993] (group17_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.733495] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMyRobotNode::MyRobotNode(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.733718] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitial_pose_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.733907] (group17_final) StderrLine: {'line': b'   52 |         \x1b[01;31m\x1b[Kinitial_pose_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("initialpose", 10);\n'}
+[6.734129] (group17_final) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.734309] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KPoseWithCovariance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.734493] (group17_final) StderrLine: {'line': b'   52 | ometry_msgs::msg::\x1b[01;31m\x1b[KPoseWithCovarianceStamped\x1b[m\x1b[K>("initialpose", 10);\n'}
+[6.734673] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.734855] (group17_final) StderrLine: {'line': b'      |                   \x1b[32m\x1b[KPoseWithCovariance\x1b[m\x1b[K\n'}
+[6.735039] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:116:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KMyRobotNode::create_publisher<<expression error> >(const char [12], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.735228] (group17_final) StderrLine: {'line': b'   52 | ("initialpose", 10\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.735404] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.735583] (group17_final) StderrLine: {'line': b'\n'}
+[6.735760] (group17_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[6.735941] (group17_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[6.736118] (group17_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[6.736293] (group17_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/transform_broadcaster.h:38\x1b[m\x1b[K,\n'}
+[6.736467] (group17_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:7\x1b[m\x1b[K,\n'}
+[6.736662] (group17_final) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.736863] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.737056] (group17_final) StderrLine: {'line': b'  200 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[6.737234] (group17_final) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.737414] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.737600] (group17_final) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.737772] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:52:116:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.737966] (group17_final) StderrLine: {'line': b'   52 | ("initialpose", 10\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.738162] (group17_final) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.738341] (group17_final) StderrLine: {'line': b'\n'}
+[6.829734] (-) TimerEvent: {}
+[6.855187] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MyRobotNode::set_initial_pose(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.855474] (group17_final) StderrLine: {'line': b'\x1b[01m\x1b[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:137:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitial_pose_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.855669] (group17_final) StderrLine: {'line': b'  137 |   \x1b[01;31m\x1b[Kinitial_pose_pub_\x1b[m\x1b[K->publish(message);\n'}
+[6.855838] (group17_final) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.929855] (-) TimerEvent: {}
+[7.030294] (-) TimerEvent: {}
+[7.130681] (-) TimerEvent: {}
+[7.231084] (-) TimerEvent: {}
+[7.331475] (-) TimerEvent: {}
+[7.431901] (-) TimerEvent: {}
+[7.532316] (-) TimerEvent: {}
+[7.632682] (-) TimerEvent: {}
+[7.733044] (-) TimerEvent: {}
+[7.833418] (-) TimerEvent: {}
+[7.933773] (-) TimerEvent: {}
+[8.034133] (-) TimerEvent: {}
+[8.134503] (-) TimerEvent: {}
+[8.234895] (-) TimerEvent: {}
+[8.335289] (-) TimerEvent: {}
+[8.435664] (-) TimerEvent: {}
+[8.536019] (-) TimerEvent: {}
+[8.636439] (-) TimerEvent: {}
+[8.736838] (-) TimerEvent: {}
+[8.837188] (-) TimerEvent: {}
+[8.937566] (-) TimerEvent: {}
+[9.037916] (-) TimerEvent: {}
+[9.138301] (-) TimerEvent: {}
+[9.238681] (-) TimerEvent: {}
+[9.339069] (-) TimerEvent: {}
+[9.439451] (-) TimerEvent: {}
+[9.539822] (-) TimerEvent: {}
+[9.640207] (-) TimerEvent: {}
+[9.740582] (-) TimerEvent: {}
+[9.840957] (-) TimerEvent: {}
+[9.941329] (-) TimerEvent: {}
+[10.041688] (-) TimerEvent: {}
+[10.142090] (-) TimerEvent: {}
+[10.242523] (-) TimerEvent: {}
+[10.343072] (-) TimerEvent: {}
+[10.443482] (-) TimerEvent: {}
+[10.543873] (-) TimerEvent: {}
+[10.644305] (-) TimerEvent: {}
+[10.744904] (-) TimerEvent: {}
+[10.845581] (-) TimerEvent: {}
+[10.946250] (-) TimerEvent: {}
+[11.046866] (-) TimerEvent: {}
+[11.147504] (-) TimerEvent: {}
+[11.248203] (-) TimerEvent: {}
+[11.348973] (-) TimerEvent: {}
+[11.449745] (-) TimerEvent: {}
+[11.550528] (-) TimerEvent: {}
+[11.651308] (-) TimerEvent: {}
+[11.751972] (-) TimerEvent: {}
+[11.790458] (group17_final) StderrLine: {'line': b'make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1\n'}
+[11.794548] (group17_final) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/my_robot_node.dir/all] Error 2\n'}
+[11.799155] (group17_final) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[11.799642] (group17_final) CommandEnded: {'returncode': 2}
+[11.852101] (-) TimerEvent: {}
+[11.952605] (-) TimerEvent: {}
+[12.053237] (-) TimerEvent: {}
+[12.153826] (-) TimerEvent: {}
+[12.254964] (-) TimerEvent: {}
+[12.355267] (-) TimerEvent: {}
+[12.455613] (-) TimerEvent: {}
+[12.556077] (-) TimerEvent: {}
+[12.656708] (-) TimerEvent: {}
+[12.687866] (group17_final) JobEnded: {'identifier': 'group17_final', 'rc': 2}
+[12.698625] (-) EventReactorShutdown: {}

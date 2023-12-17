@@ -391,6 +391,9 @@ console_bridge_DIR:PATH=/opt/ros/galactic/lib/x86_64-linux-gnu/console_bridge/cm
 //The directory containing a CMake configuration file for eigen3_cmake_module.
 eigen3_cmake_module_DIR:PATH=/opt/ros/galactic/share/eigen3_cmake_module/cmake
 
+//The directory containing a CMake configuration file for example_interfaces.
+example_interfaces_DIR:PATH=/opt/ros/galactic/share/example_interfaces/cmake
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/galactic/lib/cmake/fastcdr
 
@@ -423,6 +426,9 @@ mage_msgs_DIR:PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/galactic/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for nav2_msgs.
+nav2_msgs_DIR:PATH=/opt/ros/galactic/share/nav2_msgs/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/galactic/share/nav_msgs/cmake
