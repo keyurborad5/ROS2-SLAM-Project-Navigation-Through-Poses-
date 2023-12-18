@@ -439,7 +439,7 @@ void MyRobotNode::send_goal() {
     }
         get_waypoints_coordinates();
 
-    auto goal_msg = NavigateThroughPoses::Goal();
+    auto goal_msg = FollowWaypoints::Goal();
         for(auto &cordinate:waypoints_coordinates_){
             goal_msg.poses.push_back(createPose(cordinate.at(0),cordinate.at(1),cordinate.at(2)));
             RCLCPP_INFO_STREAM(this->get_logger(),"added pose"<<cordinate.at(0)<<" "<<cordinate.at(1)<<" "<<cordinate.at(2));      
@@ -453,7 +453,7 @@ void MyRobotNode::send_goal() {
                                                                                                           
     RCLCPP_INFO(this->get_logger(), "Sending goal");
 
-    auto send_goal_options = rclcpp_action::Client<NavigateThroughPoses>::SendGoalOptions();
+    auto send_goal_options = rclcpp_action::Client<FollowWaypoints>::SendGoalOptions();
     send_goal_options.goal_response_callback = std::bind(&MyRobotNode::goal_response_callback, this, _1);
     //send_goal_options.feedback_callback = std::bind(&MyRobotNode::feedback_callback, this, _1, _2);
     send_goal_options.result_callback = std::bind(&MyRobotNode::result_callback, this, _1);

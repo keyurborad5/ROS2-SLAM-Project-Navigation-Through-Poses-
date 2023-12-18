@@ -5,6 +5,7 @@
 #include<nav_msgs/msg/odometry.hpp>
 //#include "nav2_msgs/action/navigate_to_pose.hpp"
 #include "nav2_msgs/action/navigate_through_poses.hpp"
+#include <nav2_msgs/action/follow_waypoints.hpp> 
 #include "rclcpp_action/rclcpp_action.hpp"
 // for dynamic broadcaster
 #include "tf2_ros/transform_broadcaster.h"
@@ -18,8 +19,8 @@ using namespace std::chrono_literals;
 class MyRobotNode : public rclcpp::Node{
 
     public:
-    using NavigateThroughPoses = nav2_msgs::action::NavigateThroughPoses;
-    using GoalHandleNavigation = rclcpp_action::ClientGoalHandle<NavigateThroughPoses>;
+    using FollowWaypoints = nav2_msgs::action::FollowWaypoints;
+    using GoalHandleNavigation = rclcpp_action::ClientGoalHandle<FollowWaypoints>;
      MyRobotNode(std::string node_name) : Node(node_name){
 
         std::vector<std::string>wp{"wp1","wp2","wp3","wp4","wp5"};
@@ -121,7 +122,7 @@ class MyRobotNode : public rclcpp::Node{
 
         //************************Action******************************
         // initialize the client
-        client_ = rclcpp_action::create_client<NavigateThroughPoses>(this, "navigate_through_poses");
+        client_ = rclcpp_action::create_client<FollowWaypoints>(this, "follow_waypoints");
         // // pause for 5 seconds
         // std::this_thread::sleep_for(std::chrono::seconds(15));
         // // send the goal
@@ -138,7 +139,7 @@ class MyRobotNode : public rclcpp::Node{
      * @brief Action client for the action server navigate_to_pose
      *
      */
-    rclcpp_action::Client<NavigateThroughPoses>::SharedPtr client_;
+    rclcpp_action::Client<FollowWaypoints>::SharedPtr client_;
     //   rclcpp::TimerBase::SharedPtr timer_;
 
     //******************Action Methods*******************
@@ -154,7 +155,7 @@ class MyRobotNode : public rclcpp::Node{
      */
     void feedback_callback(
         GoalHandleNavigation::SharedPtr,
-        const std::shared_ptr<const NavigateThroughPoses::Feedback> feedback);
+        const std::shared_ptr<const FollowWaypoints::Feedback> feedback);
     /**
      * @brief Result after the action has completed
      *

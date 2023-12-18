@@ -115,9 +115,13 @@ CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/libstatistics_collector/visibility_control.hpp
+CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/detail/follow_waypoints__builder.hpp
+CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/detail/follow_waypoints__struct.hpp
+CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/detail/follow_waypoints__traits.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/detail/navigate_through_poses__builder.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/detail/navigate_through_poses__struct.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/detail/navigate_through_poses__traits.hpp
+CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/follow_waypoints.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav2_msgs/action/navigate_through_poses.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav_msgs/msg/detail/odometry__builder.hpp
 CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o: /opt/ros/galactic/include/nav_msgs/msg/detail/odometry__struct.hpp
