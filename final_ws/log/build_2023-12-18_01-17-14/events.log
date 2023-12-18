@@ -1,0 +1,250 @@
+[0.000000] (-) TimerEvent: {}
+[0.000124] (-) JobUnselected: {'identifier': 'final_project'}
+[0.000156] (-) JobUnselected: {'identifier': 'mage_msgs'}
+[0.000177] (-) JobUnselected: {'identifier': 'ros2_aruco'}
+[0.000196] (-) JobUnselected: {'identifier': 'ros2_aruco_interfaces'}
+[0.000217] (group17_final) JobQueued: {'identifier': 'group17_final', 'dependencies': OrderedDict([('mage_msgs', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs'), ('ros2_aruco_interfaces', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces')])}
+[0.000244] (group17_final) JobStarted: {'identifier': 'group17_final'}
+[0.099586] (-) TimerEvent: {}
+[0.201043] (-) TimerEvent: {}
+[0.302304] (-) TimerEvent: {}
+[0.402721] (group17_final) JobProgress: {'identifier': 'group17_final', 'progress': 'cmake'}
+[0.402881] (-) TimerEvent: {}
+[0.404218] (group17_final) JobProgress: {'identifier': 'group17_final', 'progress': 'build'}
+[0.405659] (group17_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final', '--', '-j8', '-l8'], 'cwd': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'keyur'), ('SSH_AGENT_PID', '1582'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/keyur'), ('OLDPWD', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1108'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3801'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install:/home/keyur/ros809_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'keyur'), ('JOURNAL_STREAM', '8:42250'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'keyur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/keyur:@/tmp/.ICE-unix/1620,unix/keyur:/tmp/.ICE-unix/1620'), ('INVOCATION_ID', 'dbecdb6de87c4d0f9b4edeaa1ff10bfe'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3ae95a00-d1f1-40f6-9335-12208b881490'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic')]), 'shell': False}
+[0.503094] (-) TimerEvent: {}
+[0.603717] (-) TimerEvent: {}
+[0.704245] (-) TimerEvent: {}
+[0.804912] (-) TimerEvent: {}
+[0.905231] (-) TimerEvent: {}
+[1.005672] (-) TimerEvent: {}
+[1.106092] (-) TimerEvent: {}
+[1.167930] (group17_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target my_robot_node\x1b[0m\n'}
+[1.206276] (-) TimerEvent: {}
+[1.228132] (group17_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o\x1b[0m\n'}
+[1.306353] (-) TimerEvent: {}
+[1.406775] (-) TimerEvent: {}
+[1.507164] (-) TimerEvent: {}
+[1.607559] (-) TimerEvent: {}
+[1.708017] (-) TimerEvent: {}
+[1.808377] (-) TimerEvent: {}
+[1.908719] (-) TimerEvent: {}
+[2.009046] (-) TimerEvent: {}
+[2.109399] (-) TimerEvent: {}
+[2.209797] (-) TimerEvent: {}
+[2.310194] (-) TimerEvent: {}
+[2.410581] (-) TimerEvent: {}
+[2.510963] (-) TimerEvent: {}
+[2.611349] (-) TimerEvent: {}
+[2.711748] (-) TimerEvent: {}
+[2.812123] (-) TimerEvent: {}
+[2.912487] (-) TimerEvent: {}
+[3.012873] (-) TimerEvent: {}
+[3.113255] (-) TimerEvent: {}
+[3.213627] (-) TimerEvent: {}
+[3.314012] (-) TimerEvent: {}
+[3.414455] (-) TimerEvent: {}
+[3.514819] (-) TimerEvent: {}
+[3.615190] (-) TimerEvent: {}
+[3.715571] (-) TimerEvent: {}
+[3.815989] (-) TimerEvent: {}
+[3.916386] (-) TimerEvent: {}
+[4.016830] (-) TimerEvent: {}
+[4.117272] (-) TimerEvent: {}
+[4.217646] (-) TimerEvent: {}
+[4.318017] (-) TimerEvent: {}
+[4.418409] (-) TimerEvent: {}
+[4.518788] (-) TimerEvent: {}
+[4.619148] (-) TimerEvent: {}
+[4.719519] (-) TimerEvent: {}
+[4.819905] (-) TimerEvent: {}
+[4.920265] (-) TimerEvent: {}
+[5.020622] (-) TimerEvent: {}
+[5.120983] (-) TimerEvent: {}
+[5.221344] (-) TimerEvent: {}
+[5.321695] (-) TimerEvent: {}
+[5.422107] (-) TimerEvent: {}
+[5.522479] (-) TimerEvent: {}
+[5.622846] (-) TimerEvent: {}
+[5.723236] (-) TimerEvent: {}
+[5.823607] (-) TimerEvent: {}
+[5.923975] (-) TimerEvent: {}
+[6.024393] (-) TimerEvent: {}
+[6.124761] (-) TimerEvent: {}
+[6.225132] (-) TimerEvent: {}
+[6.325510] (-) TimerEvent: {}
+[6.425917] (-) TimerEvent: {}
+[6.526284] (-) TimerEvent: {}
+[6.626644] (-) TimerEvent: {}
+[6.727003] (-) TimerEvent: {}
+[6.827365] (-) TimerEvent: {}
+[6.927729] (-) TimerEvent: {}
+[7.028116] (-) TimerEvent: {}
+[7.128522] (-) TimerEvent: {}
+[7.228887] (-) TimerEvent: {}
+[7.329250] (-) TimerEvent: {}
+[7.429611] (-) TimerEvent: {}
+[7.530009] (-) TimerEvent: {}
+[7.630339] (-) TimerEvent: {}
+[7.730709] (-) TimerEvent: {}
+[7.831071] (-) TimerEvent: {}
+[7.931436] (-) TimerEvent: {}
+[8.031793] (-) TimerEvent: {}
+[8.132160] (-) TimerEvent: {}
+[8.232542] (-) TimerEvent: {}
+[8.332926] (-) TimerEvent: {}
+[8.433301] (-) TimerEvent: {}
+[8.533638] (-) TimerEvent: {}
+[8.634020] (-) TimerEvent: {}
+[8.734431] (-) TimerEvent: {}
+[8.834813] (-) TimerEvent: {}
+[8.935201] (-) TimerEvent: {}
+[9.035591] (-) TimerEvent: {}
+[9.136007] (-) TimerEvent: {}
+[9.236397] (-) TimerEvent: {}
+[9.336784] (-) TimerEvent: {}
+[9.437190] (-) TimerEvent: {}
+[9.537663] (-) TimerEvent: {}
+[9.638100] (-) TimerEvent: {}
+[9.738511] (-) TimerEvent: {}
+[9.838887] (-) TimerEvent: {}
+[9.939257] (-) TimerEvent: {}
+[10.039630] (-) TimerEvent: {}
+[10.140043] (-) TimerEvent: {}
+[10.240443] (-) TimerEvent: {}
+[10.340844] (-) TimerEvent: {}
+[10.441229] (-) TimerEvent: {}
+[10.541618] (-) TimerEvent: {}
+[10.642044] (-) TimerEvent: {}
+[10.742494] (-) TimerEvent: {}
+[10.842891] (-) TimerEvent: {}
+[10.943247] (-) TimerEvent: {}
+[11.043594] (-) TimerEvent: {}
+[11.143941] (-) TimerEvent: {}
+[11.244284] (-) TimerEvent: {}
+[11.344627] (-) TimerEvent: {}
+[11.444965] (-) TimerEvent: {}
+[11.545313] (-) TimerEvent: {}
+[11.645660] (-) TimerEvent: {}
+[11.746045] (-) TimerEvent: {}
+[11.846380] (-) TimerEvent: {}
+[11.946729] (-) TimerEvent: {}
+[12.047074] (-) TimerEvent: {}
+[12.147417] (-) TimerEvent: {}
+[12.247757] (-) TimerEvent: {}
+[12.348104] (-) TimerEvent: {}
+[12.448446] (-) TimerEvent: {}
+[12.548797] (-) TimerEvent: {}
+[12.649142] (-) TimerEvent: {}
+[12.749501] (-) TimerEvent: {}
+[12.849852] (-) TimerEvent: {}
+[12.950219] (-) TimerEvent: {}
+[13.050583] (-) TimerEvent: {}
+[13.150944] (-) TimerEvent: {}
+[13.251305] (-) TimerEvent: {}
+[13.351663] (-) TimerEvent: {}
+[13.452023] (-) TimerEvent: {}
+[13.552378] (-) TimerEvent: {}
+[13.652741] (-) TimerEvent: {}
+[13.753118] (-) TimerEvent: {}
+[13.853530] (-) TimerEvent: {}
+[13.953893] (-) TimerEvent: {}
+[14.054256] (-) TimerEvent: {}
+[14.154615] (-) TimerEvent: {}
+[14.255003] (-) TimerEvent: {}
+[14.355371] (-) TimerEvent: {}
+[14.455734] (-) TimerEvent: {}
+[14.556101] (-) TimerEvent: {}
+[14.656462] (-) TimerEvent: {}
+[14.756824] (-) TimerEvent: {}
+[14.857181] (-) TimerEvent: {}
+[14.957554] (-) TimerEvent: {}
+[15.057926] (-) TimerEvent: {}
+[15.158283] (-) TimerEvent: {}
+[15.258641] (-) TimerEvent: {}
+[15.358997] (-) TimerEvent: {}
+[15.459362] (-) TimerEvent: {}
+[15.559719] (-) TimerEvent: {}
+[15.660083] (-) TimerEvent: {}
+[15.760444] (-) TimerEvent: {}
+[15.860805] (-) TimerEvent: {}
+[15.961167] (-) TimerEvent: {}
+[16.061527] (-) TimerEvent: {}
+[16.161913] (-) TimerEvent: {}
+[16.262271] (-) TimerEvent: {}
+[16.362593] (-) TimerEvent: {}
+[16.462955] (-) TimerEvent: {}
+[16.563320] (-) TimerEvent: {}
+[16.663813] (-) TimerEvent: {}
+[16.764525] (-) TimerEvent: {}
+[16.865491] (-) TimerEvent: {}
+[16.966281] (-) TimerEvent: {}
+[17.066879] (-) TimerEvent: {}
+[17.167653] (-) TimerEvent: {}
+[17.268474] (-) TimerEvent: {}
+[17.368867] (-) TimerEvent: {}
+[17.469274] (-) TimerEvent: {}
+[17.569601] (-) TimerEvent: {}
+[17.669933] (-) TimerEvent: {}
+[17.770295] (-) TimerEvent: {}
+[17.870726] (-) TimerEvent: {}
+[17.971127] (-) TimerEvent: {}
+[18.071533] (-) TimerEvent: {}
+[18.172018] (-) TimerEvent: {}
+[18.272396] (-) TimerEvent: {}
+[18.372805] (-) TimerEvent: {}
+[18.473216] (-) TimerEvent: {}
+[18.556217] (group17_final) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable my_robot_node\x1b[0m\n'}
+[18.573359] (-) TimerEvent: {}
+[18.673948] (-) TimerEvent: {}
+[18.774704] (-) TimerEvent: {}
+[18.875108] (-) TimerEvent: {}
+[18.975535] (-) TimerEvent: {}
+[19.075990] (-) TimerEvent: {}
+[19.176516] (-) TimerEvent: {}
+[19.277199] (-) TimerEvent: {}
+[19.378100] (-) TimerEvent: {}
+[19.478520] (-) TimerEvent: {}
+[19.578964] (-) TimerEvent: {}
+[19.679543] (-) TimerEvent: {}
+[19.779925] (-) TimerEvent: {}
+[19.880294] (-) TimerEvent: {}
+[19.980655] (-) TimerEvent: {}
+[20.081002] (-) TimerEvent: {}
+[20.181311] (-) TimerEvent: {}
+[20.281638] (-) TimerEvent: {}
+[20.308895] (group17_final) StdoutLine: {'line': b'[100%] Built target my_robot_node\n'}
+[20.325609] (group17_final) CommandEnded: {'returncode': 0}
+[20.364563] (group17_final) JobProgress: {'identifier': 'group17_final', 'progress': 'install'}
+[20.382325] (group17_final) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final'], 'cwd': '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'keyur'), ('SSH_AGENT_PID', '1582'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/keyur'), ('OLDPWD', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1108'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3801'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install:/home/keyur/ros809_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'keyur'), ('JOURNAL_STREAM', '8:42250'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'keyur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/keyur:@/tmp/.ICE-unix/1620,unix/keyur:/tmp/.ICE-unix/1620'), ('INVOCATION_ID', 'dbecdb6de87c4d0f9b4edeaa1ff10bfe'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3ae95a00-d1f1-40f6-9335-12208b881490'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/group17_final'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic')]), 'shell': False}
+[20.383678] (-) TimerEvent: {}
+[20.395288] (group17_final) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.395652] (group17_final) StdoutLine: {'line': b'-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/lib/group17_final/my_robot_node\n'}
+[20.406621] (group17_final) StdoutLine: {'line': b'-- Set runtime path of "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/lib/group17_final/my_robot_node" to ""\n'}
+[20.407138] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//include\n'}
+[20.407335] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//include/group17_final\n'}
+[20.407482] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//include/group17_final/my_robot_node.hpp\n'}
+[20.407628] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//config\n'}
+[20.407718] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final//config/waypoint_params.yaml\n'}
+[20.407838] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/ament_index/resource_index/package_run_dependencies/group17_final\n'}
+[20.407970] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/ament_index/resource_index/parent_prefix_path/group17_final\n'}
+[20.408084] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/ament_prefix_path.sh\n'}
+[20.408170] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/ament_prefix_path.dsv\n'}
+[20.408263] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/path.sh\n'}
+[20.408359] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/environment/path.dsv\n'}
+[20.408432] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.bash\n'}
+[20.408505] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.sh\n'}
+[20.408577] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.zsh\n'}
+[20.408650] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/local_setup.dsv\n'}
+[20.408722] (group17_final) StdoutLine: {'line': b'-- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.dsv\n'}
+[20.408795] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/ament_index/resource_index/packages/group17_final\n'}
+[20.408866] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/cmake/group17_finalConfig.cmake\n'}
+[20.408936] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/cmake/group17_finalConfig-version.cmake\n'}
+[20.409006] (group17_final) StdoutLine: {'line': b'-- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final/share/group17_final/package.xml\n'}
+[20.410607] (group17_final) CommandEnded: {'returncode': 0}
+[20.484867] (-) TimerEvent: {}
+[20.585279] (-) TimerEvent: {}
+[20.686107] (-) TimerEvent: {}
+[20.786790] (-) TimerEvent: {}
+[20.856375] (group17_final) JobEnded: {'identifier': 'group17_final', 'rc': 0}
+[20.857181] (-) EventReactorShutdown: {}

@@ -59,16 +59,21 @@ class MyRobotNode : public rclcpp::Node{
 
         //********************Subscriber**************************
         
-        // aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
+        aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
         
         rclcpp::QoS qos(10); qos.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
         
 
-        // part_cam_subscriber1_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera1/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb1,this,std::placeholders::_1));
-        // part_cam_subscriber2_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera2/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb2,this,std::placeholders::_1));
-        // part_cam_subscriber3_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera3/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb3,this,std::placeholders::_1));
-        // part_cam_subscriber4_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera4/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb4,this,std::placeholders::_1));
-        // part_cam_subscriber5_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera5/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb5,this,std::placeholders::_1));
+        part_cam_subscriber1_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera1/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb1,this,std::placeholders::_1));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        part_cam_subscriber2_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera2/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb2,this,std::placeholders::_1));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        part_cam_subscriber3_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera3/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb3,this,std::placeholders::_1));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        part_cam_subscriber4_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera4/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb4,this,std::placeholders::_1));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        part_cam_subscriber5_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera5/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb5,this,std::placeholders::_1));
+        std::this_thread::sleep_for(std::chrono::seconds(5));
         odom_subscriber_=this->create_subscription<nav_msgs::msg::Odometry>("odom",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::odom_sub_cb,this,std::placeholders::_1));
 
         //************************Action******************************
@@ -206,16 +211,23 @@ class MyRobotNode : public rclcpp::Node{
     void set_initial_pose(nav_msgs::msg::Odometry::SharedPtr msg);
     void send_goal();
     geometry_msgs::msg::PoseStamped createPose(double x, double y, double z);
+    void get_waypoints_coordinates();
     //###########################-----------ADDITIONAL ATTRIBUTES------------########################
     int marker_id_;
     bool found_marker_id_=false;
     double part_color_;
     std::vector<std::string> aruco_0_waypoints_;
     std::vector<std::string> aruco_1_waypoints_;
+    std::vector<std::string> follow_waypoints_;
+    std::vector<int> follow_waypoints_n_;
+    std::vector<std::vector<double>> waypoints_coordinates_;
+
+
     std::vector<std::string> advanced_camera_topics_{"mage/camera1/image","mage/camera2/image","mage/camera3/image","mage/camera4/image","mage/camera5/image"};
     std::vector<std::string> advanced_camera_frames_{"camera1_frame","camera2_frame","camera3_frame","camera4_frame","camera5_frame"};
     std::string camera_frame_;
     std::vector<std::vector<double>> parts_vector_;
+    GoalHandleNavigation::SharedPtr goal_handle_;
 
 
 };
