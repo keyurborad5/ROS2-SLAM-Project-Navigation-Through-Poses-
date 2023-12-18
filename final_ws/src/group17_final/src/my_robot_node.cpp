@@ -8,15 +8,17 @@
 
 
 //A broadcaster to assign a frame for the detected object
-void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg)
+void MyRobotNode::part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
 {
     geometry_msgs::msg::TransformStamped part_dynamic_transform_stamped;
 
     // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
     part_dynamic_transform_stamped.header.stamp = this->get_clock()->now();
 
-    part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
-    part_dynamic_transform_stamped.child_frame_id = "part";
+    // part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
+    part_dynamic_transform_stamped.header.frame_id = cam_frame;
+
+    part_dynamic_transform_stamped.child_frame_id = "part1";
 
     part_color_= msg->part_poses.at(0).part.color;
     //part_type_= msg->part_poses[0].part.type;
@@ -31,9 +33,295 @@ void MyRobotNode::part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::S
     part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses.at(0).pose.orientation.w;
    
     // Send the transform
-    part_tf_broadcaster_->sendTransform(part_dynamic_transform_stamped);
+    part_tf_broadcaster_1_->sendTransform(part_dynamic_transform_stamped);
     
     // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
+    /////////////////////////////////listener////////////////////////////////////////
+
+     geometry_msgs::msg::TransformStamped t_stamped;
+    geometry_msgs::msg::Pose pose_out;
+    //std::vector<std::variant<std::string,double>>detection;
+    try
+    {
+        t_stamped = part_tf_listener_buffer_1_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+    }
+    catch (const tf2::TransformException &ex)
+    {
+        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
+        return;
+    }
+
+    pose_out.position.x = t_stamped.transform.translation.x;
+    pose_out.position.y = t_stamped.transform.translation.y;
+    pose_out.position.z = t_stamped.transform.translation.z;
+    pose_out.orientation = t_stamped.transform.rotation;
+    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
+
+
+    //initialising local variable as vector of data of detected object //std::variant<int,double>
+     std::vector<double>detection={part_color_,pose_out.position.x,
+                                                pose_out.position.y,
+                                                pose_out.position.z,
+                                                pose_out.orientation.x,
+                                                pose_out.orientation.y,
+                                                pose_out.orientation.z,
+                                                pose_out.orientation.w};
+    //passing the above vector to logg all the detected parts
+    parts_vector_.push_back(detection);
+    
+}
+
+//A broadcaster to assign a frame for the detected object
+void MyRobotNode::part_broadcaster_2(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
+{
+    geometry_msgs::msg::TransformStamped part_dynamic_transform_stamped;
+
+    // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
+    part_dynamic_transform_stamped.header.stamp = this->get_clock()->now();
+
+    // part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
+    part_dynamic_transform_stamped.header.frame_id = cam_frame;
+
+    part_dynamic_transform_stamped.child_frame_id = "part2";
+
+    part_color_= msg->part_poses.at(0).part.color;
+    //part_type_= msg->part_poses[0].part.type;
+
+    part_dynamic_transform_stamped.transform.translation.x = msg->part_poses.at(0).pose.position.x;
+    part_dynamic_transform_stamped.transform.translation.y = msg->part_poses.at(0).pose.position.y;
+    part_dynamic_transform_stamped.transform.translation.z = msg->part_poses.at(0).pose.position.z;//had to make it neg because it was detecting object below the floor
+
+    part_dynamic_transform_stamped.transform.rotation.x = msg->part_poses.at(0).pose.orientation.x;
+    part_dynamic_transform_stamped.transform.rotation.y = msg->part_poses.at(0).pose.orientation.y;
+    part_dynamic_transform_stamped.transform.rotation.z = msg->part_poses.at(0).pose.orientation.z;
+    part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses.at(0).pose.orientation.w;
+   
+    // Send the transform
+    part_tf_broadcaster_2_->sendTransform(part_dynamic_transform_stamped);
+    
+    // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
+    /////////////////////////////////listener////////////////////////////////////////
+
+     geometry_msgs::msg::TransformStamped t_stamped;
+    geometry_msgs::msg::Pose pose_out;
+    //std::vector<std::variant<std::string,double>>detection;
+    try
+    {
+        t_stamped = part_tf_listener_buffer_2_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+    }
+    catch (const tf2::TransformException &ex)
+    {
+        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
+        return;
+    }
+
+    pose_out.position.x = t_stamped.transform.translation.x;
+    pose_out.position.y = t_stamped.transform.translation.y;
+    pose_out.position.z = t_stamped.transform.translation.z;
+    pose_out.orientation = t_stamped.transform.rotation;
+    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
+
+
+    //initialising local variable as vector of data of detected object //std::variant<int,double>
+     std::vector<double>detection={part_color_,pose_out.position.x,
+                                                pose_out.position.y,
+                                                pose_out.position.z,
+                                                pose_out.orientation.x,
+                                                pose_out.orientation.y,
+                                                pose_out.orientation.z,
+                                                pose_out.orientation.w};
+    //passing the above vector to logg all the detected parts
+    parts_vector_.push_back(detection);
+    
+}
+//A broadcaster to assign a frame for the detected object
+void MyRobotNode::part_broadcaster_3(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
+{
+    geometry_msgs::msg::TransformStamped part_dynamic_transform_stamped;
+
+    // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
+    part_dynamic_transform_stamped.header.stamp = this->get_clock()->now();
+
+    // part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
+    part_dynamic_transform_stamped.header.frame_id = cam_frame;
+
+    part_dynamic_transform_stamped.child_frame_id = "part3";
+
+    part_color_= msg->part_poses.at(0).part.color;
+    //part_type_= msg->part_poses[0].part.type;
+
+    part_dynamic_transform_stamped.transform.translation.x = msg->part_poses.at(0).pose.position.x;
+    part_dynamic_transform_stamped.transform.translation.y = msg->part_poses.at(0).pose.position.y;
+    part_dynamic_transform_stamped.transform.translation.z = msg->part_poses.at(0).pose.position.z;//had to make it neg because it was detecting object below the floor
+
+    part_dynamic_transform_stamped.transform.rotation.x = msg->part_poses.at(0).pose.orientation.x;
+    part_dynamic_transform_stamped.transform.rotation.y = msg->part_poses.at(0).pose.orientation.y;
+    part_dynamic_transform_stamped.transform.rotation.z = msg->part_poses.at(0).pose.orientation.z;
+    part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses.at(0).pose.orientation.w;
+   
+    // Send the transform
+    part_tf_broadcaster_3_->sendTransform(part_dynamic_transform_stamped);
+    
+    // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
+    /////////////////////////////////listener////////////////////////////////////////
+
+     geometry_msgs::msg::TransformStamped t_stamped;
+    geometry_msgs::msg::Pose pose_out;
+    //std::vector<std::variant<std::string,double>>detection;
+    try
+    {
+        t_stamped = part_tf_listener_buffer_3_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+    }
+    catch (const tf2::TransformException &ex)
+    {
+        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
+        return;
+    }
+
+    pose_out.position.x = t_stamped.transform.translation.x;
+    pose_out.position.y = t_stamped.transform.translation.y;
+    pose_out.position.z = t_stamped.transform.translation.z;
+    pose_out.orientation = t_stamped.transform.rotation;
+    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
+
+
+    //initialising local variable as vector of data of detected object //std::variant<int,double>
+     std::vector<double>detection={part_color_,pose_out.position.x,
+                                                pose_out.position.y,
+                                                pose_out.position.z,
+                                                pose_out.orientation.x,
+                                                pose_out.orientation.y,
+                                                pose_out.orientation.z,
+                                                pose_out.orientation.w};
+    //passing the above vector to logg all the detected parts
+    parts_vector_.push_back(detection);
+    
+}
+//A broadcaster to assign a frame for the detected object
+void MyRobotNode::part_broadcaster_4(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
+{
+    geometry_msgs::msg::TransformStamped part_dynamic_transform_stamped;
+
+    // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
+    part_dynamic_transform_stamped.header.stamp = this->get_clock()->now();
+
+    // part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
+    part_dynamic_transform_stamped.header.frame_id = cam_frame;
+
+    part_dynamic_transform_stamped.child_frame_id = "part4";
+
+    part_color_= msg->part_poses.at(0).part.color;
+    //part_type_= msg->part_poses[0].part.type;
+
+    part_dynamic_transform_stamped.transform.translation.x = msg->part_poses.at(0).pose.position.x;
+    part_dynamic_transform_stamped.transform.translation.y = msg->part_poses.at(0).pose.position.y;
+    part_dynamic_transform_stamped.transform.translation.z = msg->part_poses.at(0).pose.position.z;//had to make it neg because it was detecting object below the floor
+
+    part_dynamic_transform_stamped.transform.rotation.x = msg->part_poses.at(0).pose.orientation.x;
+    part_dynamic_transform_stamped.transform.rotation.y = msg->part_poses.at(0).pose.orientation.y;
+    part_dynamic_transform_stamped.transform.rotation.z = msg->part_poses.at(0).pose.orientation.z;
+    part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses.at(0).pose.orientation.w;
+   
+    // Send the transform
+    part_tf_broadcaster_4_->sendTransform(part_dynamic_transform_stamped);
+    
+    // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
+    /////////////////////////////////listener////////////////////////////////////////
+
+     geometry_msgs::msg::TransformStamped t_stamped;
+    geometry_msgs::msg::Pose pose_out;
+    //std::vector<std::variant<std::string,double>>detection;
+    try
+    {
+        t_stamped = part_tf_listener_buffer_4_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+    }
+    catch (const tf2::TransformException &ex)
+    {
+        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
+        return;
+    }
+
+    pose_out.position.x = t_stamped.transform.translation.x;
+    pose_out.position.y = t_stamped.transform.translation.y;
+    pose_out.position.z = t_stamped.transform.translation.z;
+    pose_out.orientation = t_stamped.transform.rotation;
+    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
+
+
+    //initialising local variable as vector of data of detected object //std::variant<int,double>
+     std::vector<double>detection={part_color_,pose_out.position.x,
+                                                pose_out.position.y,
+                                                pose_out.position.z,
+                                                pose_out.orientation.x,
+                                                pose_out.orientation.y,
+                                                pose_out.orientation.z,
+                                                pose_out.orientation.w};
+    //passing the above vector to logg all the detected parts
+    parts_vector_.push_back(detection);
+    
+}
+//A broadcaster to assign a frame for the detected object
+void MyRobotNode::part_broadcaster_5(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
+{
+    geometry_msgs::msg::TransformStamped part_dynamic_transform_stamped;
+
+    // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
+    part_dynamic_transform_stamped.header.stamp = this->get_clock()->now();
+
+    // part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
+    part_dynamic_transform_stamped.header.frame_id = cam_frame;
+
+    part_dynamic_transform_stamped.child_frame_id = "part5";
+
+    part_color_= msg->part_poses.at(0).part.color;
+    //part_type_= msg->part_poses[0].part.type;
+
+    part_dynamic_transform_stamped.transform.translation.x = msg->part_poses.at(0).pose.position.x;
+    part_dynamic_transform_stamped.transform.translation.y = msg->part_poses.at(0).pose.position.y;
+    part_dynamic_transform_stamped.transform.translation.z = msg->part_poses.at(0).pose.position.z;//had to make it neg because it was detecting object below the floor
+
+    part_dynamic_transform_stamped.transform.rotation.x = msg->part_poses.at(0).pose.orientation.x;
+    part_dynamic_transform_stamped.transform.rotation.y = msg->part_poses.at(0).pose.orientation.y;
+    part_dynamic_transform_stamped.transform.rotation.z = msg->part_poses.at(0).pose.orientation.z;
+    part_dynamic_transform_stamped.transform.rotation.w = msg->part_poses.at(0).pose.orientation.w;
+   
+    // Send the transform
+    part_tf_broadcaster_5_->sendTransform(part_dynamic_transform_stamped);
+    
+    // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
+    /////////////////////////////////listener////////////////////////////////////////
+
+     geometry_msgs::msg::TransformStamped t_stamped;
+    geometry_msgs::msg::Pose pose_out;
+    //std::vector<std::variant<std::string,double>>detection;
+    try
+    {
+        t_stamped = part_tf_listener_buffer_5_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+    }
+    catch (const tf2::TransformException &ex)
+    {
+        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
+        return;
+    }
+
+    pose_out.position.x = t_stamped.transform.translation.x;
+    pose_out.position.y = t_stamped.transform.translation.y;
+    pose_out.position.z = t_stamped.transform.translation.z;
+    pose_out.orientation = t_stamped.transform.rotation;
+    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
+
+
+    //initialising local variable as vector of data of detected object //std::variant<int,double>
+     std::vector<double>detection={part_color_,pose_out.position.x,
+                                                pose_out.position.y,
+                                                pose_out.position.z,
+                                                pose_out.orientation.x,
+                                                pose_out.orientation.y,
+                                                pose_out.orientation.z,
+                                                pose_out.orientation.w};
+    //passing the above vector to logg all the detected parts
+    parts_vector_.push_back(detection);
+    
 }
 
 // A listerner that would tansform a detected part in map frame
@@ -44,7 +332,7 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
     //std::vector<std::variant<std::string,double>>detection;
     try
     {
-        t_stamped = part_tf_listener_buffer_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
+        t_stamped = part_tf_listener_buffer_1_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
     }
     catch (const tf2::TransformException &ex)
     {
@@ -75,6 +363,11 @@ void MyRobotNode::part_listen_transform(const std::string &source_frame, const s
 //========get waypoint coordinates=========================
 void MyRobotNode::get_waypoints_coordinates(){
     std::vector<double>coordinates;
+for (const auto& vect : parts_vector_) {
+     RCLCPP_INFO_STREAM(this->get_logger(),"Another part ");
+        RCLCPP_INFO_STREAM(this->get_logger(),  vect.at(0) << ' '<<vect.at(1) << ' '<<vect.at(2) << ' '<<vect.at(3));
+        }
+
     for(auto &i:follow_waypoints_n_){
         for(const auto &j:parts_vector_){
             if(i==j.at(0)){
@@ -259,10 +552,10 @@ void MyRobotNode::part_cam_sub_cb1(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera1_frame";
-    part_broadcaster(msg);
+    part_broadcaster_1(msg,"camera1_frame","map", "part1");
     
     //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    part_listen_transform("map", "part");
+    // part_listen_transform("map", "part");
          
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 1: ");
 
@@ -282,9 +575,9 @@ void MyRobotNode::part_cam_sub_cb2(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera2_frame";
-    part_broadcaster(msg);
+    part_broadcaster_2(msg,"camera2_frame","map", "part2");
     //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    part_listen_transform("map", "part");
+    // part_listen_transform("map", "part");
 
          
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 2: ");
@@ -306,9 +599,9 @@ void MyRobotNode::part_cam_sub_cb3(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera3_frame";
-    part_broadcaster(msg);
+    part_broadcaster_3(msg,"camera3_frame","map", "part3");
     //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    part_listen_transform("map", "part");
+    // part_listen_transform("map", "part");
 
          
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 3: ");
@@ -329,9 +622,9 @@ void MyRobotNode::part_cam_sub_cb4(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera4_frame";
-    part_broadcaster(msg);
+    part_broadcaster_4(msg,"camera4_frame","map", "part4");
     //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    part_listen_transform("map", "part");
+    // part_listen_transform("map", "part");
 
          
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 4: ");
@@ -352,9 +645,9 @@ void MyRobotNode::part_cam_sub_cb5(mage_msgs::msg::AdvancedLogicalCameraImage::S
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera5_frame";
-    part_broadcaster(msg);
+    part_broadcaster_5(msg,"camera5_frame","map", "part5");
     //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    part_listen_transform("map", "part");
+    // part_listen_transform("map", "part");
 
          
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 5: ");

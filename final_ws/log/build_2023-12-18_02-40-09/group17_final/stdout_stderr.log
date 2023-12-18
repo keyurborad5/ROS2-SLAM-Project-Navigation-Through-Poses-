@@ -1,0 +1,15 @@
+[35m[1mScanning dependencies of target my_robot_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o[0m
+In file included from [01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/src/my_robot_node.cpp:1[m[K:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:[m[K In constructor ‘[01m[KMyRobotNode::MyRobotNode(std::string)[m[K’:
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpart_tf_listener_buffer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpart_tf_listener_buffer_1_[m[K’?
+   73 |         [01;31m[Kpart_tf_listener_buffer_[m[K =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kpart_tf_listener_buffer_1_[m[K
+[01m[K/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include/group17_final/my_robot_node.hpp:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpart_transform_listener_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpart_transform_listener_1_[m[K’?
+   75 |         [01;31m[Kpart_transform_listener_[m[K =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kpart_transform_listener_1_[m[K
+make[2]: *** [CMakeFiles/my_robot_node.dir/build.make:63: CMakeFiles/my_robot_node.dir/src/my_robot_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/my_robot_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

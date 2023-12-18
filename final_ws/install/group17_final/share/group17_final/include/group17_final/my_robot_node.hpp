@@ -38,18 +38,61 @@ class MyRobotNode : public rclcpp::Node{
 
         //************************Broadcaster******************************
         // initialize the transform broadcaster
-        part_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        part_tf_broadcaster_1_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
         // Load a buffer of transforms
-        part_tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
-        part_tf_buffer_->setUsingDedicatedThread(true);
-         
+        part_tf_buffer_1_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_buffer_1_->setUsingDedicatedThread(true);
+
+        // initialize the transform broadcaster
+        part_tf_broadcaster_2_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        // Load a buffer of transforms
+        part_tf_buffer_2_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_buffer_2_->setUsingDedicatedThread(true);
+
+        // initialize the transform broadcaster
+        part_tf_broadcaster_3_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        // Load a buffer of transforms
+        part_tf_buffer_3_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_buffer_3_->setUsingDedicatedThread(true);
+
+        // initialize the transform broadcaster
+        part_tf_broadcaster_4_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        // Load a buffer of transforms
+        part_tf_buffer_4_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_buffer_4_->setUsingDedicatedThread(true);
+
+        // initialize the transform broadcaster
+        part_tf_broadcaster_5_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        // Load a buffer of transforms
+        part_tf_buffer_5_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_buffer_5_->setUsingDedicatedThread(true); 
 
 
         //************************Listener******************************
         // load a buffer of transforms
-        part_tf_listener_buffer_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
-        part_tf_listener_buffer_->setUsingDedicatedThread(true);
-        part_transform_listener_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_);
+        part_tf_listener_buffer_1_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_listener_buffer_1_->setUsingDedicatedThread(true);
+        part_transform_listener_1_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_1_);
+
+        // load a buffer of transforms
+        part_tf_listener_buffer_2_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_listener_buffer_2_->setUsingDedicatedThread(true);
+        part_transform_listener_2_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_2_);
+
+        // load a buffer of transforms
+        part_tf_listener_buffer_3_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_listener_buffer_3_->setUsingDedicatedThread(true);
+        part_transform_listener_3_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_3_);
+
+        // load a buffer of transforms
+        part_tf_listener_buffer_4_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_listener_buffer_4_->setUsingDedicatedThread(true);
+        part_transform_listener_4_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_4_);
+
+        // load a buffer of transforms
+        part_tf_listener_buffer_5_ =std::make_unique<tf2_ros::Buffer>(this->get_clock());
+        part_tf_listener_buffer_5_->setUsingDedicatedThread(true);
+        part_transform_listener_5_ =std::make_shared<tf2_ros::TransformListener>(*part_tf_listener_buffer_5_);
 
 
         //********************Publisher**************************
@@ -125,23 +168,53 @@ class MyRobotNode : public rclcpp::Node{
     //******************Broadcaster Attribubtes*******************
 
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
-    std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_;
+    std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_1_;
+    std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_2_;
+    std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_3_;
+    std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_4_;
+    std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_5_;
+
+
     /*!< MyRobotNode object */
-    std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_1_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_2_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_3_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_4_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_5_;
+
 
     //**********************Broadcaster Methods***********************
     /**
      * @brief Timer to broadcast the transform
      *
      */
-    void part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr);
+    // void part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr);
+    void part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
+    void part_broadcaster_2(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
+    void part_broadcaster_3(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
+    void part_broadcaster_4(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
+    void part_broadcaster_5(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
+
 
     //###########################-----------LISTENER------------########################
 
      //******************Listener Attribubtes*******************
-    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_;
-    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_{nullptr};
+    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_1_;
+    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_1_{nullptr};
     
+    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_2_;
+    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_2_{nullptr};
+    
+    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_3_;
+    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_3_{nullptr};
+    
+    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_4_;
+    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_4_{nullptr};
+    
+    std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_5_;
+    std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_5_{nullptr};
+    
+
     //**********************Listener Methods***********************
     /**
      * @brief Listen to a part transform
