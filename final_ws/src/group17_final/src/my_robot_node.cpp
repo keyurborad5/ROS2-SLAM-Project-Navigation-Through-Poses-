@@ -441,8 +441,8 @@ void MyRobotNode::send_goal() {
 
     auto goal_msg = NavigateThroughPoses::Goal();
         for(auto &cordinate:waypoints_coordinates_){
-            goal_msg.poses.push_back(createPose(cordinate.at(0),cordinate.at(1),cordinate.at(2)));
-            RCLCPP_INFO_STREAM(this->get_logger(),"added pose"<<cordinate.at(0)<<" "<<cordinate.at(1)<<" "<<cordinate.at(2));      
+            goal_msg.poses.push_back(createPose(cordinate.at(0),cordinate.at(1),0.0));
+            RCLCPP_INFO_STREAM(this->get_logger(),"added pose"<<cordinate.at(0)<<" "<<cordinate.at(1)<<" "<<0.0);      
         } 
 
     // goal_msg.poses.push_back(createPose(1.9, -2.5, 1.0));
