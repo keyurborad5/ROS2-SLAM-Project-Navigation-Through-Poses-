@@ -1,0 +1,257 @@
+[0.737s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project': CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project -- -j8 -l8
+[1.932s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.260s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.021s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[4.621s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.736s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[5.635s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.824s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[5.863s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[5.985s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[6.465s] -- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+[6.473s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[6.885s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[7.363s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[7.402s] -- Looking for ignition-math6 -- found version 6.15.0
+[7.450s] -- Searching for dependencies of ignition-math6
+[7.471s] -- Looking for OGRE...
+[7.486s] -- Found Ogre Ghadamon (1.9.0)
+[7.494s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[7.506s] -- Looking for OGRE_Paging...
+[7.506s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[7.507s] -- Looking for OGRE_Terrain...
+[7.507s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[7.507s] -- Looking for OGRE_Property...
+[7.507s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[7.507s] -- Looking for OGRE_RTShaderSystem...
+[7.507s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[7.508s] -- Looking for OGRE_Volume...
+[7.508s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[7.508s] -- Looking for OGRE_Overlay...
+[7.508s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[7.762s] -- Looking for ignition-math6 -- found version 6.15.0
+[7.775s] -- Looking for ignition-transport8 -- found version 8.3.0
+[7.776s] -- Searching for dependencies of ignition-transport8
+[7.818s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[7.835s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[7.842s] -- Checking for module 'libzmq >= 4'
+[8.015s] --   Found libzmq , version 4.3.2
+[8.117s] -- Checking for module 'uuid'
+[8.150s] --   Found uuid, version 2.34.0
+[8.208s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[8.208s] -- Searching for dependencies of ignition-msgs5
+[8.235s] -- Looking for ignition-math6 -- found version 6.15.0
+[8.249s] -- Checking for module 'tinyxml2'
+[8.282s] --   Found tinyxml2, version 6.2.0
+[8.358s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[8.372s] -- Looking for ignition-common3 -- found version 3.14.2
+[8.373s] -- Searching for dependencies of ignition-common3
+[8.384s] -- Looking for dlfcn.h - found
+[8.384s] -- Looking for libdl - found
+[8.416s] -- Searching for <ignition-common3> component [graphics]
+[8.417s] -- Looking for ignition-common3-graphics -- found version 3.14.2
+[8.418s] -- Searching for dependencies of ignition-common3-graphics
+[8.418s] -- Looking for ignition-math6 -- found version 6.15.0
+[8.435s] -- Looking for ignition-fuel_tools4 -- found version 4.6.0
+[8.435s] -- Searching for dependencies of ignition-fuel_tools4
+[8.509s] -- Checking for module 'jsoncpp'
+[8.534s] --   Found jsoncpp, version 1.7.4
+[8.603s] -- Checking for module 'libzip'
+[8.639s] --   Found libzip, version 1.5.1
+[8.701s] -- Looking for ignition-common3 -- found version 3.14.2
+[8.701s] -- Looking for ignition-math6 -- found version 6.15.0
+[8.702s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[8.728s] -- Found gazebo_ros: 3.5.2 (/opt/ros/galactic/share/gazebo_ros/cmake)
+[8.778s] -- Gazebo version: 11.11
+[8.796s] -- Found camera_info_manager: 2.5.1 (/opt/ros/galactic/share/camera_info_manager/cmake)
+[9.070s] -- Found gazebo_msgs: 3.5.2 (/opt/ros/galactic/share/gazebo_msgs/cmake)
+[9.778s] -- Found image_transport: 2.5.1 (/opt/ros/galactic/share/image_transport/cmake)
+[10.769s] -- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)
+[10.908s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[10.965s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[11.010s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[11.039s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[11.770s] -- Found mage_msgs: 0.0.0 (/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/share/mage_msgs/cmake)
+[12.192s] -- Configuring done
+[12.546s] -- Generating done
+[12.550s] -- Build files have been written to: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project
+[12.632s] [  0%] Built target ament_cmake_python_copy_final_project
+[12.870s] [ 50%] Built target disable_shadows_plugin
+[12.877s] [100%] Built target AriacLogicalCameraPlugin
+[13.056s] running egg_info
+[13.057s] writing final_project.egg-info/PKG-INFO
+[13.057s] writing dependency_links to final_project.egg-info/dependency_links.txt
+[13.058s] writing top-level names to final_project.egg-info/top_level.txt
+[13.070s] running install_scripts
+[13.101s] running egg_info
+[13.102s] writing final_project.egg-info/PKG-INFO
+[13.102s] writing dependency_links to final_project.egg-info/dependency_links.txt
+[13.103s] writing top-level names to final_project.egg-info/top_level.txt
+[13.103s] reading manifest file 'final_project.egg-info/SOURCES.txt'
+[13.105s] writing manifest file 'final_project.egg-info/SOURCES.txt'
+[13.150s] [100%] Built target ament_cmake_python_build_final_project_egg
+[13.156s] reading manifest file 'final_project.egg-info/SOURCES.txt'
+[13.157s] writing manifest file 'final_project.egg-info/SOURCES.txt'
+[13.203s] [100%] Built target ament_cmake_python_build_final_project_scripts
+[13.225s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project' returned '0': CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project -- -j8 -l8
+[13.281s] Invoking command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project': CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project
+[13.298s] -- Install configuration: ""
+[13.298s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/library_path.sh
+[13.299s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/library_path.dsv
+[13.299s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include
+[13.299s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project
+[13.299s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/ariac_logical_camera_plugin.hpp
+[13.300s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/disable_shadows_plugin.hpp
+[13.300s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libAriacLogicalCameraPlugin.so
+[13.300s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libdisable_shadows_plugin.so
+[13.301s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config
+[13.301s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config/waypoint_params.yaml
+[13.329s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config/sensors.yaml
+[13.330s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch
+[13.330s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/spawn_turtlebot3.launch.py
+[13.330s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/robot_state_publisher.launch.py
+[13.331s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/final_project.launch.py
+[13.331s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models
+[13.332s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery
+[13.332s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/model.sdf
+[13.333s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/model.config
+[13.333s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes
+[13.334s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_pins.stl
+[13.334s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_base.stl
+[13.334s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_cap.stl
+[13.334s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/battery/meshes/battery_collision.stl
+[13.335s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle
+[13.335s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model.sdf
+[13.335s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model.config
+[13.336s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/turtlebot3_waffle/model-1_4.sdf
+[13.336s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2
+[13.336s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/model.sdf
+[13.337s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/model.config
+[13.337s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes
+[13.337s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_01_Diffuse.jpg
+[13.337s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_06_Diffuse.jpg
+[13.337s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/box_pallet.dae
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_2/meshes/AM200_029_05_Diffuse.jpg
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/scripts
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/scripts/marker.material
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/svgtopng.zip
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/5x5_1000-2.svg
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/5x5_1000-2.png
+[13.338s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/materials/textures/marker_2.png
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/model.sdf
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_2/model.config
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/model.sdf
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/model.config
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_03_Diffuse.jpg
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_01_Diffuse.jpg
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_08_Diffuse.jpg
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/box_pallet.dae
+[13.339s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets_3/meshes/AM200_029_04_Diffuse.jpg
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/model.sdf
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/model.config
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/Suede_Blue_1.jpg
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/Suede_Blue.jpg
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/example-2.png
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/floor/meshes/floor.dae
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/model.sdf
+[13.340s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/model.config
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_02_Diffuse.jpg
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_07_Diffuse.jpg
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/AM200_029_01_Diffuse.jpg
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/box_pallets/meshes/box_pallet.dae
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/scripts
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/scripts/marker.material
+[13.341s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/5x5_1000-1.png
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/svgtopng.zip
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/5x5_1000-1.svg
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/materials/textures/marker_1.png
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/model.sdf
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_1/model.config
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/scripts
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/scripts/marker.material
+[13.342s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/5x5_1000-0.png
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/svgtopng.zip
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/marker_0_old.png
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/materials/textures/5x5_1000-0.svg
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/model.sdf
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/aruco_marker_0/model.config
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials/textures
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/materials/textures/camera.png
+[13.343s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/model.sdf
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/model.config
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/meshes
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/advanced_logical_camera/meshes/camera.dae
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/model.sdf
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/model.config
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_exterior.dae
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/Metal_Rough.jpg.001.jpg
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_exterior.stl
+[13.344s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/bin_interior.stl
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//models/parts_bin/meshes/Steel_Brushed_Stainless.jpg.001.jpg
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//worlds
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//worlds/final.world
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps/final2_map.yaml
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//maps/final2_map.pgm
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/pythonpath.sh
+[13.345s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/pythonpath.dsv
+[13.345s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info
+[13.345s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/SOURCES.txt
+[13.345s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/top_level.txt
+[13.346s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/PKG-INFO
+[13.346s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages//final_project.egg-info/dependency_links.txt
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/spawn_params.py
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf_broadcaster.py
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/utilities.py
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/__init__.py
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/environment_startup.py
+[13.346s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf2_geometry_msgs.py
+[13.422s] Listing '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project'...
+[13.422s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/__init__.py'...
+[13.422s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/environment_startup.py'...
+[13.422s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/spawn_params.py'...
+[13.422s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf2_geometry_msgs.py'...
+[13.423s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/tf_broadcaster.py'...
+[13.423s] Compiling '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages/final_project/utilities.py'...
+[13.431s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/environment_startup_node.py
+[13.432s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/sensor_tf_broadcaster.py
+[13.432s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/part_spawner.py
+[13.432s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/final_project/object_tf_broadcaster.py
+[13.432s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/package_run_dependencies/final_project
+[13.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/parent_prefix_path/final_project
+[13.433s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/ament_prefix_path.sh
+[13.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/ament_prefix_path.dsv
+[13.433s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/path.sh
+[13.433s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/environment/path.dsv
+[13.433s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.bash
+[13.434s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.sh
+[13.434s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.zsh
+[13.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/local_setup.dsv
+[13.434s] -- Installing: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/package.dsv
+[13.434s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/ament_index/resource_index/packages/final_project
+[13.435s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/ament_cmake_export_libraries-extras.cmake
+[13.435s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/final_projectConfig.cmake
+[13.435s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/cmake/final_projectConfig-version.cmake
+[13.435s] -- Up-to-date: /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project/package.xml
+[13.441s] Invoked command in '/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project' returned '0': CMAKE_PREFIX_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/group17_final:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/group17:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_simulations:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_fake_node:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/navigation_demo:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/my_first_package:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs:/home/keyur/ros809_ws/install/first_package:/home/keyur/ros809_ws/install/automated_vehicle:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco:/opt/ros/galactic LD_LIBRARY_PATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_sensors/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/turtlebot3_gazebo/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/ros2_aruco/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install/mage_msgs/lib/python3.8/site-packages:/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install/av_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/build/final_project
