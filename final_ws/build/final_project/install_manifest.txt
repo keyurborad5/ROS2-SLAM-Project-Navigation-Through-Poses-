@@ -4,6 +4,7 @@
 /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/include/final_project/disable_shadows_plugin.hpp
 /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libAriacLogicalCameraPlugin.so
 /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/lib/libdisable_shadows_plugin.so
+/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config/waypoint_params.yaml
 /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//config/sensors.yaml
 /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/spawn_turtlebot3.launch.py
 /home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/install/final_project/share/final_project//launch/robot_state_publisher.launch.py
