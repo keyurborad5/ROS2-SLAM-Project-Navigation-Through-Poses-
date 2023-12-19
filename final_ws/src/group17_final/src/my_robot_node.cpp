@@ -7,15 +7,14 @@
 #include <geometry_msgs/msg/pose.hpp>
 
 
-//A broadcaster to assign a frame for the detected object
-void MyRobotNode::part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
+//A Transformer to assign a frame for the detected object, and listen the frame in source frame (here odom)
+void MyRobotNode::part_transformer(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,const std::string &source_frame, const std::string &target_frame)
 {
     geometry_msgs::msg::TransformStamped part_dynamic_transform_stamped;
 
     // RCLCPP_INFO(this->get_logger(), "Broadcasting dynamic_frame");
     part_dynamic_transform_stamped.header.stamp = this->get_clock()->now();
 
-    // part_dynamic_transform_stamped.header.frame_id = camera_frame_.c_str();
     part_dynamic_transform_stamped.header.frame_id = cam_frame;
 
     part_dynamic_transform_stamped.child_frame_id = target_frame;
@@ -35,12 +34,10 @@ void MyRobotNode::part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage:
     // Send the transform
     part_tf_broadcaster_1_->sendTransform(part_dynamic_transform_stamped);
     
-    // RCLCPP_INFO_STREAM(this->get_logger(), "PART advance cam Broadcasting_dynamic_frame : "<<msg->part_poses[0].pose.position.x;);
     /////////////////////////////////listener////////////////////////////////////////
 
      geometry_msgs::msg::TransformStamped t_stamped;
     geometry_msgs::msg::Pose pose_out;
-    //std::vector<std::variant<std::string,double>>detection;
     try
     {
         t_stamped = part_tf_listener_buffer_1_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
@@ -55,7 +52,6 @@ void MyRobotNode::part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage:
     pose_out.position.y = t_stamped.transform.translation.y;
     pose_out.position.z = t_stamped.transform.translation.z;
     pose_out.orientation = t_stamped.transform.rotation;
-    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
 
 
     //initialising local variable as vector of data of detected object //std::variant<int,double>
@@ -73,49 +69,15 @@ void MyRobotNode::part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage:
 
 
 
-// A listerner that would tansform a detected part in map frame
-void MyRobotNode::part_listen_transform(const std::string &source_frame, const std::string &target_frame)
-{
-    geometry_msgs::msg::TransformStamped t_stamped;
-    geometry_msgs::msg::Pose pose_out;
-    //std::vector<std::variant<std::string,double>>detection;
-    try
-    {
-        t_stamped = part_tf_listener_buffer_1_->lookupTransform(source_frame, target_frame, tf2::TimePointZero, 50ms);
-    }
-    catch (const tf2::TransformException &ex)
-    {
-        RCLCPP_ERROR_STREAM(this->get_logger(), "Could not get transform between " << source_frame << " and " << target_frame << ": " << ex.what());
-        return;
-    }
-
-    pose_out.position.x = t_stamped.transform.translation.x;
-    pose_out.position.y = t_stamped.transform.translation.y;
-    pose_out.position.z = t_stamped.transform.translation.z;
-    pose_out.orientation = t_stamped.transform.rotation;
-    // RCLCPP_INFO_STREAM(this->get_logger(), "DETECTED PART COLOR: "<<part_color_);
-
-
-    //initialising local variable as vector of data of detected object //std::variant<int,double>
-     std::vector<double>detection={part_color_,pose_out.position.x,
-                                                pose_out.position.y,
-                                                pose_out.position.z,
-                                                pose_out.orientation.x,
-                                                pose_out.orientation.y,
-                                                pose_out.orientation.z,
-                                                pose_out.orientation.w};
-    //passing the above vector to logg all the detected parts
-    parts_vector_.push_back(detection);
-    
-}
 
 //========get waypoint coordinates=========================
 void MyRobotNode::get_waypoints_coordinates(){
     std::vector<double>coordinates;
-for (const auto& vect : parts_vector_) {
-     RCLCPP_INFO_STREAM(this->get_logger(),"Another part ");
-        RCLCPP_INFO_STREAM(this->get_logger(),  vect.at(0) << ' '<<vect.at(1) << ' '<<vect.at(2) << ' '<<vect.at(3));
-        }
+// To check the vector of the detected part
+// for (const auto& vect : parts_vector_) {
+//      RCLCPP_INFO_STREAM(this->get_logger(),"Another part ");
+//         RCLCPP_INFO_STREAM(this->get_logger(),  vect.at(0) << ' '<<vect.at(1) << ' '<<vect.at(2) << ' '<<vect.at(3));
+//         }
 
     for(auto &i:follow_waypoints_n_){
         for(const auto &j:parts_vector_){
@@ -128,14 +90,14 @@ for (const auto& vect : parts_vector_) {
         
     }
     //For verifying the sorted coordinates
-    for (const auto& vect : waypoints_coordinates_) {
-     RCLCPP_INFO_STREAM(this->get_logger(),"Another part ");
+    // for (const auto& vect : waypoints_coordinates_) {
+    //  RCLCPP_INFO_STREAM(this->get_logger(),"Another part ");
 
-            for ( const auto element : vect) {
-                RCLCPP_INFO_STREAM(this->get_logger(),  element << ' ');
-            }
+    //         for ( const auto element : vect) {
+    //             RCLCPP_INFO_STREAM(this->get_logger(),  element << ' ');
+    //         }
             
-        }
+    //     }
 }
 
 //Callback method to get the location and orientaton of the robot
@@ -168,6 +130,7 @@ void MyRobotNode::set_initial_pose(nav_msgs::msg::Odometry::SharedPtr msg) {
   initial_pose_pub_->publish(message);
 }
 
+//==== creating pose in PoseStamped type=============
 geometry_msgs::msg::PoseStamped MyRobotNode::createPose(double x, double y, double z){
     auto pose_stamped = geometry_msgs::msg::PoseStamped();
     pose_stamped.pose.position.x = x;
@@ -193,12 +156,6 @@ void MyRobotNode::send_goal() {
             goal_msg.poses.push_back(createPose(cordinate.at(0),cordinate.at(1),0.0));
             RCLCPP_INFO_STREAM(this->get_logger(),"added pose"<<cordinate.at(0)<<" "<<cordinate.at(1)<<" "<<0.0);      
         } 
-
-    // goal_msg.poses.push_back(createPose(1.9, -2.5, 1.0));
-    // goal_msg.poses.push_back(createPose(6.23, -2.35, 1.0));
-    // goal_msg.poses.push_back(createPose(6.43, 2.05, 1.0));
-    // goal_msg.poses.push_back(createPose(4.26, 0.469, 1.0));
-    // goal_msg.poses.push_back(createPose(1.6, 2.5, 1.0));
                                                                                                           
     RCLCPP_INFO(this->get_logger(), "Sending goal");
 
@@ -297,16 +254,11 @@ void MyRobotNode::part_cam_sub_cb1(mage_msgs::msg::AdvancedLogicalCameraImage::S
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
     
-    //RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
-
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera1_frame";
-    part_broadcaster_1(msg,"camera1_frame","map", "part1");
+    part_transformer(msg,"camera1_frame","map", "part1");
     
-    //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    // part_listen_transform("map", "part");
-         
-    // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 1: ");
+   // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 1: ");
 
     part_cam_subscriber1_.reset(); 
         
@@ -319,16 +271,10 @@ void MyRobotNode::part_cam_sub_cb1(mage_msgs::msg::AdvancedLogicalCameraImage::S
 void MyRobotNode::part_cam_sub_cb2(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
-    
-    //RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera2_frame";
-    part_broadcaster_1(msg,"camera2_frame","map", "part2");
-    //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    // part_listen_transform("map", "part");
-
-         
+    part_transformer(msg,"camera2_frame","map", "part2");
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 2: ");
 
     part_cam_subscriber2_.reset(); 
@@ -344,16 +290,10 @@ void MyRobotNode::part_cam_sub_cb3(mage_msgs::msg::AdvancedLogicalCameraImage::S
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
     
-    //RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
-
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera3_frame";
-    part_broadcaster_1(msg,"camera3_frame","map", "part3");
-    //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    // part_listen_transform("map", "part");
-
-         
-    // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 3: ");
+    part_transformer(msg,"camera3_frame","map", "part3");
+     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 3: ");
 
     part_cam_subscriber3_.reset(); 
         
@@ -366,15 +306,10 @@ void MyRobotNode::part_cam_sub_cb3(mage_msgs::msg::AdvancedLogicalCameraImage::S
 void MyRobotNode::part_cam_sub_cb4(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
-    
-    //RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera4_frame";
-    part_broadcaster_1(msg,"camera4_frame","map", "part4");
-    //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    // part_listen_transform("map", "part");
-
+    part_transformer(msg,"camera4_frame","map", "part4");
          
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 4: ");
 
@@ -389,16 +324,11 @@ void MyRobotNode::part_cam_sub_cb4(mage_msgs::msg::AdvancedLogicalCameraImage::S
 void MyRobotNode::part_cam_sub_cb5(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg){
     
     if(!msg->part_poses.empty()){//Very necesaary otherwise node will die by it self; checking if topic is publishing or not
-    
-    //RCLCPP_INFO_STREAM(this->get_logger(),"Part Advance Camera callback : ");
 
     //once detected part, then we can broadcast a new frame at the detected location 
     camera_frame_="camera5_frame";
-    part_broadcaster_1(msg,"camera5_frame","map", "part5");
-    //after broadcasting we can listen the part frame wrt to any frame ,here we want wrt odom frame
-    // part_listen_transform("map", "part");
-
-         
+    part_transformer(msg,"camera5_frame","map", "part5");
+        
     // RCLCPP_INFO_STREAM(this->get_logger(),"Continue Part subscription camera 5: ");
 
     part_cam_subscriber5_.reset(); 

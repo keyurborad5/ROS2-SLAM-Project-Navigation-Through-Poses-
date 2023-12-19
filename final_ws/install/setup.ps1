@@ -26,6 +26,7 @@ _colcon_prefix_chain_powershell_source_script "/opt/ros/galactic\local_setup.ps1
 _colcon_prefix_chain_powershell_source_script "/home/keyur/ros809_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/keyur/empm809y_cpp/Cpp_projects/ROS2learn/rosprac809_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/keyur/empm809y_cpp/Cpp_projects/RWA3-Group17/rwa3_ws/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/keyur/empm809y_cpp/Cpp_projects/Map_env/build_map_ws/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

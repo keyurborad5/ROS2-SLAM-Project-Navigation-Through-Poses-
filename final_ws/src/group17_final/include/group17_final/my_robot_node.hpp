@@ -3,7 +3,6 @@
 #include <cmath>
 #include <geometry_msgs/msg/pose.hpp>
 #include<nav_msgs/msg/odometry.hpp>
-//#include "nav2_msgs/action/navigate_to_pose.hpp"
 #include "nav2_msgs/action/navigate_through_poses.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 // for dynamic broadcaster
@@ -61,12 +60,9 @@ class MyRobotNode : public rclcpp::Node{
         initial_pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("initialpose", 10);
 
         //********************Subscriber**************************
-        
+        //*******aruco cam subscriber**********
         aruco_cam_subscriber_=this->create_subscription<ros2_aruco_interfaces::msg::ArucoMarkers>("aruco_markers",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::aruco_cam_sub_cb,this,std::placeholders::_1));
-        
-        rclcpp::QoS qos(10); qos.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
-        
-
+        //*******camera detecting part subscriber*****
         part_cam_subscriber1_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera1/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb1,this,std::placeholders::_1));
         std::this_thread::sleep_for(std::chrono::seconds(1));
         part_cam_subscriber2_=this->create_subscription<mage_msgs::msg::AdvancedLogicalCameraImage>("mage/camera2/image",rclcpp::SensorDataQoS(), std::bind(&MyRobotNode::part_cam_sub_cb2,this,std::placeholders::_1));
@@ -82,10 +78,7 @@ class MyRobotNode : public rclcpp::Node{
         //************************Action******************************
         // initialize the client
         client_ = rclcpp_action::create_client<NavigateThroughPoses>(this, "navigate_through_poses");
-        // // pause for 5 seconds
-        // std::this_thread::sleep_for(std::chrono::seconds(15));
-        // // send the goal
-        // send_goal();
+        
 
      }
 
@@ -129,20 +122,21 @@ class MyRobotNode : public rclcpp::Node{
 
     /*!< Buffer that stores several seconds of transforms for easy lookup by the listener. */
     std::shared_ptr<tf2_ros::Buffer> part_tf_buffer_1_;
-    
-
-
     /*!< MyRobotNode object */
     std::shared_ptr<tf2_ros::TransformBroadcaster> part_tf_broadcaster_1_;
     
 
     //**********************Broadcaster Methods***********************
+    
     /**
-     * @brief Timer to broadcast the transform
-     *
+     * @brief To broadcast the frame and listen frame in odom 
+     * 
+     * @param msg input header and poses of the detected object in the given format
+     * @param cam_frame input the head frame ID of the detected part frame 
+     * @param source_frame name the frame to which you want to tranform the frame ID
+     * @param target_frame name the frame ID of the detected part
      */
-    // void part_broadcaster(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr);
-    void part_broadcaster_1(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
+    void part_transformer(mage_msgs::msg::AdvancedLogicalCameraImage::SharedPtr msg, const std::string &cam_frame,  const std::string &source_frame, const std::string &target_frame);
     
 
     //###########################-----------LISTENER------------########################
@@ -150,16 +144,7 @@ class MyRobotNode : public rclcpp::Node{
      //******************Listener Attribubtes*******************
     std::unique_ptr<tf2_ros::Buffer> part_tf_listener_buffer_1_;
     std::shared_ptr<tf2_ros::TransformListener> part_transform_listener_1_{nullptr};
-    
-   
-    //**********************Listener Methods***********************
-    /**
-     * @brief Listen to a part transform
-     *
-     * @param source_frame Source frame (child frame) of the transform
-     * @param target_frame Target frame (parent frame) of the transform
-     */
-    void part_listen_transform(const std::string &source_frame, const std::string &target_frame);
+
 
     //###########################-----------PUBLISHER------------########################
 
@@ -172,7 +157,14 @@ class MyRobotNode : public rclcpp::Node{
     rclcpp::Publisher<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr initial_pose_pub_;
 
     //**********************Publisher Methods***********************
-    
+     // set the initial pose for navigation
+    /**
+     * @brief Set the initial pose object
+     * 
+     * @param msg msg is pose of robot from odom topic
+     * @return * void 
+     */
+    void set_initial_pose(nav_msgs::msg::Odometry::SharedPtr msg);
 
 
     //###########################-----------SUBSCRIBER------------########################
@@ -186,9 +178,6 @@ class MyRobotNode : public rclcpp::Node{
     rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage>::SharedPtr part_cam_subscriber4_;
     rclcpp::Subscription<mage_msgs::msg::AdvancedLogicalCameraImage>::SharedPtr part_cam_subscriber5_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber_;
-
-
-
 
     //**********************Subscriber Methods***********************
     /**
@@ -217,10 +206,24 @@ class MyRobotNode : public rclcpp::Node{
 
 
     //###########################-----------ADDITIONAL METHODS------------########################
-    // set the initial pose for navigation
-    void set_initial_pose(nav_msgs::msg::Odometry::SharedPtr msg);
+   /**
+    * @brief To send goal to bot to navigate through poses
+    * 
+    */
     void send_goal();
+    /**
+     * @brief Create a Pose object
+     * 
+     * @param x x position of pose
+     * @param y y position of pose
+     * @param z z position of pose
+     * @return geometry_msgs::msg::PoseStamped returns vector of pose in PoseStamped type
+     */
     geometry_msgs::msg::PoseStamped createPose(double x, double y, double z);
+    /**
+     * @brief Get the waypoints coordinates object which is sorted according to waypoint color based on aruco marker ID
+     * 
+     */
     void get_waypoints_coordinates();
     //###########################-----------ADDITIONAL ATTRIBUTES------------########################
     int marker_id_;
@@ -228,13 +231,11 @@ class MyRobotNode : public rclcpp::Node{
     double part_color_;
     std::vector<std::string> aruco_0_waypoints_;
     std::vector<std::string> aruco_1_waypoints_;
-    std::vector<std::string> follow_waypoints_;
-    std::vector<int> follow_waypoints_n_;
+    std::vector<std::string> follow_waypoints_; //for waypoints in color
+    std::vector<int> follow_waypoints_n_;// for waypoints in the color mapped integer 
     std::vector<std::vector<double>> waypoints_coordinates_;
 
 
-    std::vector<std::string> advanced_camera_topics_{"mage/camera1/image","mage/camera2/image","mage/camera3/image","mage/camera4/image","mage/camera5/image"};
-    std::vector<std::string> advanced_camera_frames_{"camera1_frame","camera2_frame","camera3_frame","camera4_frame","camera5_frame"};
     std::string camera_frame_;
     std::vector<std::vector<double>> parts_vector_;
     GoalHandleNavigation::SharedPtr goal_handle_;
