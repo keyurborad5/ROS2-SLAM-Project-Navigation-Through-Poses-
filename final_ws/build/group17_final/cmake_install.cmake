@@ -60,6 +60,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/group17_final/" TYPE DIRECTORY FILES
     "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/include"
+    "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/launch"
     "/home/keyur/empm809y_cpp/Cpp_projects/Final-Group17/final_ws/src/group17_final/config"
     )
 endif()

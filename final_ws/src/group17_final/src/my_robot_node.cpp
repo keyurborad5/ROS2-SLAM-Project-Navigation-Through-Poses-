@@ -104,14 +104,14 @@ void MyRobotNode::get_waypoints_coordinates(){
 void MyRobotNode::odom_sub_cb(nav_msgs::msg::Odometry::SharedPtr msg){
 
     
-    RCLCPP_INFO_STREAM(this->get_logger(),"INSIDE ODODM_subscriber ABOVE  send goal ");
-
+    
+    // initialising the bot pose
     set_initial_pose(msg);
-    // pause for 5 seconds
-        std::this_thread::sleep_for(std::chrono::seconds(15));
-        // send the goal
-        send_goal();
-          RCLCPP_INFO_STREAM(this->get_logger(),"INSIDE ODODM_subscriber below send goal ");
+    // pause for 15 seconds
+    std::this_thread::sleep_for(std::chrono::seconds(15));
+    // send the goal
+    send_goal();
+  
 
     odom_subscriber_.reset();
     
@@ -154,7 +154,7 @@ void MyRobotNode::send_goal() {
     auto goal_msg = NavigateThroughPoses::Goal();
         for(auto &cordinate:waypoints_coordinates_){
             goal_msg.poses.push_back(createPose(cordinate.at(0),cordinate.at(1),0.0));
-            RCLCPP_INFO_STREAM(this->get_logger(),"added pose"<<cordinate.at(0)<<" "<<cordinate.at(1)<<" "<<0.0);      
+            RCLCPP_INFO_STREAM(this->get_logger(),"added pose : "<<cordinate.at(0)<<" "<<cordinate.at(1)<<" "<<0.0);      
         } 
                                                                                                           
     RCLCPP_INFO(this->get_logger(), "Sending goal");
